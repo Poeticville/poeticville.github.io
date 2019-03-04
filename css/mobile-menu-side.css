@@ -1,0 +1,103 @@
+
+    .mobile-menu-icon {
+      color: #001342;
+      font-size: 48px;
+      margin: -6px;
+    }
+
+    .bar1, .bar2, .bar3 {
+      width: 23px;
+      height: 2px;
+      background-color: whitesmoke;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+
+    .bar1:hover, .bar2:hover, .bar3:hover {
+        background-color: #002893;
+    }
+
+    /* The sidebar menu */
+    .sidebar {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      left: 0;
+      background-color: #111;
+        align-items: baseline;
+      overflow-x: hidden; /* Disable horizontal scroll */
+        overflow-y: hidden;
+      padding-top: 65px; /* Place content 60px from the top */
+      transition: 0.4s; /* 0.5 second transition effect to slide in the sidebar */
+    }
+
+    /* The sidebar links */
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        display: block;
+        transition: 0.3s;
+        font-family: "Alegreya Sans SC", serif;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.2em;
+        color: #818181;
+		white-space: nowrap;
+    /*	color: #f7f4f4*/
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+      color: whitesmoke;
+    }
+
+    .sidebar a.active {
+        color: yellow;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 50px;
+      margin-left: 50px;
+    }
+
+    /* The button used to open the sidebar */
+    .openbtn {
+        cursor: pointer;
+        background-color: transparent;
+        color: whitesmoke;
+        padding: 15px;
+        margin-top: -49px;
+        margin-right: -6px;
+        display: block;
+        border: none;
+        float: right;
+    }
+
+    .openbtn:hover {
+        background-color: #002e7d;
+        padding: 15px;
+    }
+
+    .openbtn:active {
+        background-color: #002e7d;
+        padding: 15px;
+    }
+
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s; /* If you want a transition effect */
+      padding: 0;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
