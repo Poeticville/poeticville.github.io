@@ -1,51 +1,45 @@
 
     .mobile-menu-icon {
-      color: #001342;
-      font-size: 48px;
-      margin: -6px;
+      color: yellow;
+      font-size: 18px;
+      margin-right: 20px;
     }
 
-    .bar1, .bar2, .bar3 {
-      width: 23px;
-      height: 2px;
-      background-color: whitesmoke;
-      margin: 5px 0;
-      transition: 0.4s;
-    }
-
-    .bar1:hover, .bar2:hover, .bar3:hover {
-        background-color: #002893;
-    }
+    /*.bar1, .bar2, .bar3 {*/
+      /*width: 22px;*/
+      /*height: 2px;*/
+      /*background-color: whitesmoke;*/
+      /*margin: 5px 0;*/
+      /*transition: 0.4s;*/
+    /*}*/
 
     /* The sidebar menu */
     .sidebar {
       height: 100%; /* 100% Full-height */
       width: 0; /* 0 width - change this with JavaScript */
       position: fixed; /* Stay in place */
-      z-index: 1; /* Stay on top */
+      z-index: 3; /* Stay on top */
       top: 0;
       left: 0;
       background-color: #111;
-        align-items: baseline;
       overflow-x: hidden; /* Disable horizontal scroll */
-        overflow-y: hidden;
+        overflow-y: scroll;
       padding-top: 65px; /* Place content 60px from the top */
       transition: 0.4s; /* 0.5 second transition effect to slide in the sidebar */
     }
 
     /* The sidebar links */
     .sidebar a {
-        padding: 8px 8px 8px 32px;
+        padding: 10px 8px 10px 32px;
         text-decoration: none;
         display: block;
         transition: 0.3s;
-        font-family: "Alegreya Sans SC", serif;
+        font-family: Quicksand, serif;
         text-align: left;
-        font-weight: 600;
-        font-size: 1.2em;
+        font-weight: 500;
+        font-size: 1.1em;
         color: #818181;
 		white-space: nowrap;
-    /*	color: #f7f4f4*/
     }
 
     /* When you mouse over the navigation links, change their color */
@@ -54,7 +48,7 @@
     }
 
     .sidebar a.active {
-        color: yellow;
+        color: whitesmoke;
     }
 
     /* Position and style the close button (top right corner) */
@@ -72,8 +66,8 @@
         background-color: transparent;
         color: whitesmoke;
         padding: 15px;
-        margin-top: -49px;
-        margin-right: -6px;
+        margin-top: -48px;
+        margin-right: -7px;
         display: block;
         border: none;
         float: right;
@@ -87,6 +81,7 @@
     .openbtn:active {
         background-color: #002e7d;
         padding: 15px;
+        transform: scale(0.99);
     }
 
 
