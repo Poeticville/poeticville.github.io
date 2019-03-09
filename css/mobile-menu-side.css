@@ -2,7 +2,6 @@
     .mobile-menu-icon {
       color: yellow;
       font-size: 18px;
-      margin-right: 20px;
     }
 
     /*.bar1, .bar2, .bar3 {*/
@@ -28,6 +27,10 @@
       transition: 0.4s; /* 0.5 second transition effect to slide in the sidebar */
     }
 
+    .sidebar li {
+        margin-left: 10px;
+    }
+
     /* The sidebar links */
     .sidebar a {
         padding: 10px 8px 10px 32px;
@@ -37,7 +40,7 @@
         font-family: Quicksand, serif;
         text-align: left;
         font-weight: 500;
-        font-size: 1.1em;
+        font-size: 1em;
         color: #818181;
 		white-space: nowrap;
     }
@@ -56,7 +59,7 @@
       position: absolute;
       top: 0;
       right: 25px;
-      font-size: 50px;
+      font-size: 40px;
       margin-left: 50px;
     }
 
