@@ -47,7 +47,7 @@
 
     /* When you mouse over the navigation links, change their color */
     .sidebar a:hover {
-      color: whitesmoke;
+      color: yellow;
     }
 
     .sidebar a.active {

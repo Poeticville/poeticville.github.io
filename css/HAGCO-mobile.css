@@ -1,1091 +1,1101 @@
-@charset "utf-8";
-/* CSS Document */
-
-
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(../fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-    url(../fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
-    url(../fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
-}
-
-.material-icons {
-    font-family: 'Material Icons', serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px; /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: rtl;
-
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-}
-
-@media screen and (max-width: 500px) {
-
-}
-
-.navlistitem a.active,
-.navlistitem a.active:hover {
-    color: #001342;
-    font-family: "Quicksand Medium", serif;
-    font-size: 1em;
-    font-weight: 600;
-    background-color: #F7DC1B;
-    padding: 11px;
-    margin: 0;
-    border-radius: 5px;
-}
-
-.navlistitem a:hover {
-    color: #F7DC1B;
-    text-decoration: none;
-}
-
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-/*@media screen and (max-width: 500px) {*/
-/*.topnav a:not(:first-child) {display: none;}*/
-/*.topnav a.icon {*/
-/*float: right;*/
-/*display: block;		*/
-/*}*/
-/*}*/
-
-nav {
-    line-height: normal;
-    display: block;
-    text-align: justify;
-    background-color: #0030AB;
-    height: auto;
-    padding: 12px;
-    margin: 0;
-}
-
-header {
-    background-color: #002171;
-    margin: 0;
-    height: 150px;
-    display: block;
-    padding: 10px;
-    text-align: center;
-}
-
-header > a {
-    display: block;
-    text-align: center;
-    /*padding: 10px;*/
-}
-
-header .HAGCO-logo-png {
-    margin: 25px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 320px;
-    height: 75px;
-}
-
-a {
-    color: #F6F6F6;
-    display: inline-block;
-}
-
-body {
-    background-color: #4565ec;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-@font-face {
-    font-family: "Alegreya Sans SC";
-    src: url(../fonts/AlegreyaSansSC-Regular.ttf);
-}
-@font-face {
-    font-family: Quicksand;
-    src: url(../fonts/Quicksand-Regular.ttf);
-    src: url( ../fonts/Quicksand-Medium.ttf);
-}
-@font-face {
-    font-family: "Quicksand Medium";
-    src: url( ../fonts/Quicksand-Medium.ttf);
-}
-
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    background-color: #002171;
-    color: whitesmoke;
-    padding: 30px 15px 20px;
-    margin: 10px 0 0;
-    height: auto;
-    font-family: Quicksand, "Lato Light", "Montserrat Alternates Light", "Montserrat Alternates", Arial, serif;
-    font-weight: normal;
-    overflow: hidden;
-    bottom: 0;
-}
-
-nav-footer {
-    line-height: normal;
-    display: block;
-    overflow: visible;
-    background-color: #0030AB;
-    height: auto;
-    padding: 12px;
-    margin: 0;
-    font-family: Archivo, serif;
-    font-size: 1em;
-}
-
-.backtotop-btn {
-    font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: transparent;
-    color: whitesmoke;
-    padding: 0;
-    margin: -36px 5px 0 0;
-    border: none;
-    float: right;
-}
-
-.div-footer-copyright {
-    float: none;
-    text-align: center;
-    margin: 30px 0 0;
-}
-
-.footerCONTACT-h2 {
-    color: #1659FF;
-    font-weight: bold;
-    font-size: 1.15em;
-    margin: 0;
-    font-family: Oswald, "Oswald SemiBold", serif;
-}
-
-.div-footer-contact {
-    float: none;
-    text-align: center;
-    margin: 30px 0 0;
-    display: block;
-}
-
-.div-footer-add {
-    float: none;
-    text-align: center;
-    margin: 30px 0 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-@font-face {
-    font-family: 'Montserrat Alternates';
-    src: url(../fonts/MontserratAlternates-Regular.ttf);
-}
-
-.footerCONTACT-email {
-    text-decoration: none;
-    /*  color: #6580EC;*/
-    font-size: 1em;
-    font-weight: 500;
-    font-family: 'Montserrat Alternates', serif;
-}
-
-.footerCONTACT-email:hover {
-    text-decoration: underline;
-    color: aliceblue;
-}
-
-.footerADDRESS-h2 {
-    color: #1659FF;
-    font-weight: bolder;
-    font-family: Oswald, "Oswald SemiBold", serif;
-    font-size: 1.15em;
-    margin: 0;
-}
-
-.div-footer-followus {
-    float: none;
-    align-items: center;
-    margin: 0;
-}
-
-.follow-us-h2 {
-    color: #1659FF;
-    font-weight: bolder;
-    font-family: Oswald, "Oswald SemiBold", serif;
-    font-size: 1.15em;
-}
-
-.icon-footer-contact {
-    color: #1659FF;
-    font-size: 20px;
-    font-weight: normal;
-    margin: 0;
-}
-
-.social-media-icons {
-    /*		color: #3B73FF;*/
-    margin: 1px 0 0;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.footer-FB {
-    /*color: #97B4FF;*/
-    color: whitesmoke;
-    margin: 1px 0 0;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.footer-FB:hover {
-    color: white;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.footer-INSTA {
-    color: whitesmoke;
-    margin: 0 16px;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.footer-INSTA:hover {
-    color: white;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.footer-TWITTER {
-    color: whitesmoke;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.footer-TWITTER:hover {
-    color: white;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.copyright {
-    font-size: 11px;
-    font-weight: normal;
-    margin: 1px;
-}
-
-@font-face {
-    font-family: "Sarina";
-    src: url(../fonts/Sarina-Regular.ttf);
-}
-
-.ethernalarts {
-    color: #EFD308;
-    font-weight: 400;
-    font-size: 1em;
-    font-family: Sarina, Satisfy, "Kaushan Script", cursive;
-    text-decoration: none;
-    font-style: normal;
-}
-
-.ethernalarts:hover,
-.ethernal:focus {
-    color: #EFD308;
-    text-decoration: underline;
-}
-
-.WELCOME-box {
-    margin: 10px 0 0;
-    background-color: #F9F9F9;
-    padding: 20px;
-    font-weight: normal;
-    display: inline-block;
-    color: #010101;
-}
-
-@font-face {
-    font-family: 'Oswald SemiBold';
-    src: url(../fonts/Oswald-SemiBold.ttf);
-}
-
-.WELCOME-h2 {
-    font-family: "Oswald SemiBold", serif;
-    font-size: 1.3em;
-    text-align: left;
-    font-style: normal;
-    line-height: 1em;
-    font-weight: normal;
-    margin: 0;
-    color: #262626;
-}
-
-@font-face {
-    font-family: Archivo;
-    src: url(../fonts/Archivo-Regular.ttf);
-}
-
-.WELCOME-content {
-    margin: 8px 0 0;
-    padding: 0;
-    text-align: justify;
-    font-family: Archivo, serif;
-    font-weight: normal;
-    display: block;
-    color: #060000;
-    font-size: 0.8em;
-    line-height: 1.7em;
-}
-
-.butWELCOME {
-    margin: 10px 0 0;
-    background-color: #F58100;
-    padding: 10px 20px 10px 20px;
-    display: inline-block;
-    color: #F6F6F6;
-    font-family: Archivo, serif;
-    font-size: 0.7em;
-    text-align: center;
-    font-weight: normal;
-    text-decoration: none;
-    -webkit-box-shadow: -3px 3px 3px #555555;
-    box-shadow: -3px 3px 3px #555555;
-}
-
-.butWELCOME:hover,
-.butWELCOME:focus {
-    color: #F6F6F6;
-    background-color: #DD7400;
-    text-decoration: none;
-}
-
-.butWELCOME:active {
-    transform: none;
-    background-color: #D67000;
-}
-
-
-.secADMISSION-box {
-    margin: 10px 0 0;
-    display: block;
-    padding-bottom: 20px;
-    background-color: #F9F9F9;
-    border-top-width: 360px;
-}
-
-.secADMISSION-h2 {
-    font-family: "Oswald SemiBold", serif;
-    font-weight: normal;
-    color: #262626;
-    padding-left: 20px;
-    font-size: 1.3em;
-    font-style: normal;
-    line-height: 1em;
-    margin-top: 18px;
-}
-
-.thumbimgADMISSION {
-    margin: 0;
-    width: 100%;
-}
-
-.secADMISSION-content {
-    padding: 0 20px;
-    font-family: Archivo, serif;
-    color: #000000;
-    font-weight: normal;
-    font-size: 0.8em;
-    text-align: justify;
-    margin: 8px 0 0;
-    line-height: 1.7em;
-}
-
-.butADMISSION {
-    margin: 16px 0 0 20px;
-    background-color: #F58100;
-    padding: 10px 20px 10px 20px;
-    display: inline-block;
-    color: #FFFFFF;
-    font-family: Archivo, serif;
-    font-size: 8pt;
-    text-align: center;
-    font-weight: normal;
-    -webkit-box-shadow: -3px 3px 3px #555555;
-    box-shadow: -3px 3px 3px #555555;
-}
-
-.butADMISSION:hover,
-.butADMISSION:focus {
-    color: #FFFFFF;
-    background-color: #DD7400;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-.butADMISSION:active {
-    transform: none;
-    background-color: #D67000;
-}
-
-.secWHYHAGCO-box {
-    background-color: #006600;
-    padding: 30px;
-    margin: 10px 0 0;
-    text-align: center;
-    font-weight: normal;
-    display: block;
-    color: #010101;
-}
-
-@font-face {
-    font-family: "Archivo Black";
-    src: url(../fonts/ArchivoBlack-Regular.ttf);
-}
-
-.secWHYHAGCO-h2 {
-    font-family: "Oswald SemiBold", sans-serif;
-    font-weight: bold;
-    font-size: 1.95em;
-    margin: -10px 0 0;
-    color: #26B003;
-    text-align: center;
-    text-shadow: 4px 4px 4px #0f3b03;
-}
-
-@font-face {
-    font-family: "Chau Philomene One";
-    src: url(../fonts/ChauPhilomeneOne-Regular.ttf);
-}
-
-.secWHYHAGCO-list {
-    text-align: center;
-    font-family: "Chau Philomene One", fantasy;
-    font-weight: normal;
-    font-size: 1.1em;
-    color: #B2B2B2;
-    padding: 0;
-    margin-right: 10px;
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-top: -12px;
-}
-
-.icon-HAGCOlist {
-    color: #26B003;
-    font-size: 20px;
-}
-
-.icon-bullet {
-    color: #0D2171;
-    margin-right: 15px;
-}
-
-@font-face {
-    font-family: "Alegreya Sans SC ExtraBold";
-    src: url(../fonts/AlegreyaSansSC-ExtraBold.ttf);
-}
-
-.butSCHEDULE-TOUR {
-    margin: 23px auto 0;
-    background-color: lime;
-    width: 200px;
-    padding: 10px;
-    display: block;
-    color: #004C00;
-    font-family: Archivo, 'Archivo Medium', serif;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 0px;
-    -webkit-box-shadow: -7px 7px 7px #003700;
-    box-shadow: -7px 7px 7px #003700;
-}
-
-.butSCHEDULE-TOUR:hover,
-.butSCHEDULE-TOUR:focus {
-    color: #004C00;
-    background-color: limegreen;
-    text-decoration: none;
-}
-
-.butSCHEDULE-TOUR:active {
-    color: lime;
-    background-color: #004C00;
-    /*-webkit-box-shadow: -4px 4px 4px #005900;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); */
-}
-
-.schPROSPECTUS-box {
-    background-color: #e1e1e1;
-    border: 0 solid #252571;
-    padding: 20px;
-    margin: 10px 0 0;
-    text-align: center;
-    box-shadow: 7px 7px 7px #363b9b;
-}
-
-@font-face {
-    font-family: "Archivo Medium";
-    src: url(../fonts/Archivo-Bold.ttf);
-}
-
-.schPROSPECTUS-h2 {
-    color: #0D2171;
-    font-family: "Oswald SemiBold", serif;
-    font-size: 2em;
-    font-weight: 600;
-    display: block;
-    margin: 0;
-    text-align: center;
-    /*text-shadow: 4px 4px 4px #230032;*/
-}
-
-.schPROSPECTUS-content {
-    color: #060000;
-    text-align: center;
-    font-family: Archivo, serif;
-    font-weight: 500;
-    font-size: 0.84em;
-    padding: 0 30px;
-    margin: 8px 0 0;
-}
-
-.pdfICON {
-    margin: 13px 0;
-    display: inline-block;
-    color: red;
-    font-size: 50px;
-}
-
-.dwnldPROSPECTUS {
-    margin: 12px auto;
-    /*margin-left: 35px;*/
-    display: block;
-    text-decoration: none;
-    background-color: mediumblue;
-    width: 270px;
-    padding: 10px;
-    color: #E7E7E7;
-    font-family: Archivo, "Archivo Medium", Arial, "Arial Narrow", serif;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-align: center;
-    -webkit-box-shadow: -5px 5px 5px #000047;
-    box-shadow: -5px 5px 5px #000047;
-}
-
-.dwnldPROSPECTUS:hover {
-    color: whitesmoke;
-    text-decoration: none;
-    background-color: #00009b;
-}
-
-@font-face {
-    font-family: 'Baloo Tammudu';
-    src: url(../fonts/BalooTammudu-Regular.ttf);
-}
-
-.INDEX-gallery-div {
-    margin: 10px 0 0;
-    display: block;
-    position: relative;
-}
-
-.INDEX-gallery-div > a {
-    position: relative;
-    display: block;
-}
-
-.INDEX-news-image {
-    z-index: 1;
-    filter: brightness(40%);
-    box-shadow: 0 3px 3px #7A7A7A;
-    width: 100%;
-}
-
-.INDEX-gallery-div:hover .INDEX-news-image,
-.INDEX-gallery-div:focus .INDEX-news-image {
-    filter: brightness(60%);
-}
-
-.INDEX-news-image:active {
-    transform: scale(0.99);
-}
-
-.INDEX-news-h2 {
-    color: #FBFBFB;
-    font-size: 2.3em;
-    font-family: "Baloo Tammudu", serif;
-    text-align: center;
-    position: absolute;
-    font-weight: normal;
-    text-shadow: 4px 4px 4px #0D0D0D;
-    top: 45%;
-    width: 100%;
-    z-index: 2;
-}
-
-.container-newsletter {
-    width: 100%;
-    margin: 15px 0 0;
-    padding: 0;
-    background-color: transparent;
-    display: inline-block;
-    text-align: center;
-}
-
-.newsletter-h2 {
-    color: #1659FF;
-    font-size: 1.2em;
-    /*font-family: Quicksand, "Quicksand Light", "Quicksand Medium";*/
-    font-family: Oswald, "Oswald SemiBold";
-    text-align: center;
-    font-weight: bold;
-    margin: 0;
-}
-
-.newsletter-email {
-    float: none;
-    margin: 10px 0 0;
-}
-
-.newsletter-submit {
-    margin: -10px 0 0;
-}
-
-#newsletter input[type="email"] {
-    float: left;
-    margin: 0 0 0 14px;
-    width: 60%;
-    height: 40px;
-    border: 0 solid #003ACE;
-    background-color: #5384FF;
-    padding: 10px;
-    color: #000000;
-    font-size: 1em;
-    font-weight: bold;
-    font-family: Archivo, Arial, serif;
-}
-
-#newsletter input[type="email"]:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 0px solid #1659FF;
-}
-
-#newsletter input:focus {
-    background-color: #7099FF;
-    outline: 0;
-    border: 0px solid #1659FF;
-}
-
-#newsletter button[type="submit"] {
-    cursor: pointer;
-    margin: -30px 14px 0;
-    float: right;
-    width: 30%;
-    height: 40px;
-    border: 4px none #1659FF;
-    background-color: #003ED8;
-    padding: 10px;
-    color: #E0E0F0;
-    font-weight: normal;
-    font-size: 0.9em;
-    font-family: Archivo, "Alegreya Sans SC", Arial, serif;
-}
-
-#newsletter button[type="submit"]:hover {
-    background-color: #E0E0F0;
-    border: 4px none #5353A5;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-    color: #003ED8;
-    font-weight: normal;
-}
-
-#newsletter button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-::-webkit-input-placeholder {
-    color: #888;
-}
-
-:-moz-placeholder {
-    color: #888;
-}
-
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.secABOUT-content {
-    font-family: Archivo, serif;
-    color: #010101;
-    font-weight: normal;
-    font-size: 0.9em;
-    text-align: justify;
-    background-color: whitesmoke;
-    width: 100%;
-    padding: 30px;
-    margin: 10px 0 0;
-    -webkit-box-shadow: 4px 4px 4px #5C67E3;
-    box-shadow: 4px 4px 4px #5C67E3;
-}
-
-@font-face {
-    font-family: Oswald;
-    src: url(../fonts/Oswald-Regular.ttf);
-}
-
-.welcometoHAGCO {
-    font-family: Oswald, serif;
-    text-align: center;
-    line-height: normal;
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #0D2171;
-}
-
-.imgABOUTprincipal {
-    margin: 20px auto 0;
-    float: none;
-    text-align: center;
-    padding-top: 0;
-}
-
-.secABOUTPrincipalLabel {
-    font-family: Archivo, serif;
-    color: #010101;
-    font-weight: normal;
-    font-size: 0.9em;
-    line-height: 1.6em;
-    margin: 7px 0 0;
-    text-align: center;
-}
-
-.ABOUTpage-Purpose {
-    font-family: Oswald, serif;
-    font-size: 1.3em;
-    color: #0D2171;
-    text-align: center;
-    font-weight: 700;
-}
-
-.secADMISSIONpage-box {
-    background-color: whitesmoke;
-    width: 100%;
-    margin: 10px 0 0;
-    text-align: justify;
-    font-weight: normal;
-    display: block;
-    color: #010101;
-    box-shadow: 5px 5px 5px #5C67E3;
-    padding: 30px;
-    font-family: Archivo, Gotham, "Arial Black", "Arial Narrow", sans-serif;
-    font-size: 0.9em;
-}
-
-.secADMISSIONpage-h2 {
-    font-family: "Oswald Semibold", serif;
-    font-weight: normal;
-    font-size: 1.5em;
-    margin: 0;
-    color: #0D2171;
-    text-align: center;
-}
-
-.ADMISSIONpage-h3 {
-    font-family: Oswald, serif;
-    font-size: 1.18em;
-    color: #0D2171;
-    text-align: center;
-    font-weight: bolder;
-}
-
-
-.secADMISSIONpage-content {
-    font-family: Archivo, serif;
-    color: #010101;
-    font-weight: normal;
-    font-size: 0.9em;
-    line-height: 1.6em;
-    padding-right: 75px;
-    padding-left: 40px;
-}
-
-.ADMISSIONpage-ol {
-    font-family: Archivo, serif;
-    color: #010101;
-    font-weight: normal;
-    font-size: 1.1em;
-    line-height: 1.6em;
-    list-style-type: decimal;
-    margin-right: 55px;
-}
-
-.ADMISSIONpage-ol li {
-    padding-left: 20px;
-}
-
-.ADMISSIONpage-ul {
-    font-family: Archivo, "Archivo Medium", Arial, "Arial Black", "Arial Narrow", serif;
-    color: #010101;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.6em;
-    list-style-type: square;
-    font-style: italic;
-    margin-left: 0;
-}
-
-.ACADEMICSpage-ul {
-    font-family: Archivo, serif;
-    color: #010101;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.6em;
-    list-style-type: square;
-    font-style: italic;
-    margin-left: 0;
-}
-
-.ADMISSIONpage-email {
-    font-family: Archivo, serif;
-    color: #0D47A1;
-    font-weight: bold;
-    font-size: 0.95em;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.butACTIVITYpage {
-    margin: 18px auto;
-    width: 160px;
-    background-color: #D36F00;
-    padding: 10px;
-    display: block;
-    color: whitesmoke;
-    font-family: Archivo, serif;
-    font-size: 0.9em;
-    text-align: center;
-    font-weight: normal;
-    border-radius: 0;
-    -webkit-box-shadow: -6px 6px 6px #371b00;
-    box-shadow: -6px 6px 6px #371b00;
-}
-
-.butACTIVITYpage:hover,
-.butACTIVITYpage:focus {
-    color: whitesmoke;
-    background-color: #c36300;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-.butACTIVITYpage:active {
-    transform: scale(0.99);
-    border: thin #602A88;
-}
-
-.secCONTACT-box {
-    background-color: #47478F;
-    padding: 30px 20px 20px;
-    margin: 10px 0 0;
-    font-family: Archivo, Arial, Lato, serif;
-    font-size: 1em;
-    font-weight: normal;
-    text-align: center;
-    width: 100%;
-    display: block;
-    color: #010101;
-}
-
-/*.fieldset-con-left {
-    width: 100%;
-    margin: 0;
-}
-*/
-@font-face {
-    font-family: 'Yesteryear';
-    src: url(../fonts/Yesteryear-Regular.ttf);
-}
-
-#CONTACTpage-h2 {
-    font-family: "Oswald SemiBold", serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #23234D;
-    text-align: center;
-    margin-left: 0;
-    margin-top: -10px;
-}
-
-#CONTACTpage-h1 {
-    /*font-family: Quicksand, Lato, "Lato Light", Arial, sans-serif;*/
-    font-family: Archivo, serif;
-    font-weight: normal;
-    font-size: 0.9em;
-    color: whitesmoke;
-    text-align: center;
-    margin: -10px 0 0;
-}
-
-fieldset {
-    margin: 0 0 10px;
-    padding: 0;
-    width: 100%;
-    align-items: center;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="subject"],
-#contact textarea {
-    width: 100%;
-    border: 0 solid #202044;
-    background-color: #9E9ECE;
-    margin: 0 0 15px -30px;
-    padding: 13px 0 13px 35px;
-    color: #000000;
-    font-size: 0.8em;
-    font-weight: 600;
-    font-family: Archivo, "Archivo Medium", Arial, "Arial Black", "Arial Narrow", serif;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="subject"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 0px solid #1659FF;
-}
-
-#contact textarea {
-    height: 150px;
-    width: 100%;
-    resize: vertical;
-    border: 0 solid #202044;
-}
-
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    border: 0 none #1659FF;
-    border-radius: 0;
-    background-color: #16162E;
-    padding: 20px;
-    color: #B6B6DB;
-    font-size: 1em;
-    text-align: center;
-    font-family: Oswald, "Oswald SemiBold", serif;
-}
-
-#contact button[type="submit"]:hover {
-    background-color: #1F1F42;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-    color: #B6B6DB;
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    background-color: #B6B6DA;
-    outline: 0;
-    border: 0px solid #1659FF;
-}
-
-
-/*position should be relative and z-index greater than one*/
-.icorn {
-    position: relative;
-    float: left;
-    margin-left: 8px;
-    margin-top: 14px;
-    z-index: 2;
-    color: #181831;
-}
-
-.icorn-submit {
-    float: none;
-    color: #8C8CC8;
-    margin-left: -10px;
-    margin-top: 0px;
-    position: relative;
-    z-index: 2;
-}
-
-.SCHEDULE-box {
-    background-color: #47478F;
-    width: 100%;
-    padding: 30px 20px 20px;
-    margin: 10px 0 0;
-    text-align: center;
-    font-family: Archivo, Arial, Lato, serif;
-    font-size: 1em;
-    font-weight: normal;
-    display: block;
-    color: #010101;
-}
-
-#SCHEDULEpage-h2 {
-    font-weight: bold;
-    font-size: 1.9em;
-    color: #262652;
-    text-align: center;
-    margin: -10px 0 0;
-    font-family: "Oswald SemiBold", serif;
-}
-
-#SCHEDULEpage-h1 {
-    font-family: Archivo, sans-serif;
-    font-weight: normal;
-    font-size: 0.9em;
-    color: whitesmoke;
-    margin-left: 0;
-    text-align: center;
-    margin-top: -10px;
-}
-
-@media screen and (min-width: 425px) {
-    body {
-        width: 405px;
+    @charset "utf-8";
+    /* CSS Document */
+
+
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(../fonts/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+        src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
+        url(../fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
     }
-}
+
+    .material-icons {
+        font-family: 'Material Icons', serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px; /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: rtl;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+    }
+
+    @media screen and (max-width: 500px) {
+
+    }
+
+    .navlistitem a.active,
+    .navlistitem a.active:hover {
+        color: #001342;
+        font-family: "Quicksand Medium", serif;
+        font-size: 0.9em;
+        font-weight: 600;
+        background-color: #F7DC1B;
+        padding: 11px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .navlistitem a:hover {
+        color: #F7DC1B;
+        text-decoration: none;
+    }
+
+
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    /*@media screen and (max-width: 500px) {*/
+    /*.topnav a:not(:first-child) {display: none;}*/
+    /*.topnav a.icon {*/
+    /*float: right;*/
+    /*display: block;		*/
+    /*}*/
+    /*}*/
+
+    nav {
+        line-height: normal;
+        display: block;
+        text-align: justify;
+        background-color: #0030AB;
+        height: auto;
+        padding: 12px;
+        margin: 0;
+    }
+
+    header {
+        background-color: #002171;
+        margin: 0;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header > a {
+        display: inline-block;
+        text-align: center;
+        /*padding: 10px;*/
+    }
+
+    header .HAGCO-logo-png {
+        margin: 25px auto;
+        text-align: center;
+        width: 100%;
+        height: 74px;
+        max-width: 340px;
+    }
+
+    .pagepic {
+        margin: 10px 0 0;
+    }
+
+    a {
+        color: #F6F6F6;
+        display: inline-block;
+    }
+
+    body {
+        background-color: #4565ec;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    @font-face {
+        font-family: "Alegreya Sans SC";
+        src: url(../fonts/AlegreyaSansSC-Regular.ttf);
+    }
+    @font-face {
+        font-family: Quicksand;
+        src: url(../fonts/Quicksand-Regular.ttf);
+        src: url( ../fonts/Quicksand-Medium.ttf);
+    }
+    @font-face {
+        font-family: "Quicksand Medium";
+        src: url( ../fonts/Quicksand-Medium.ttf);
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.9em;
+        background-color: #002171;
+        color: whitesmoke;
+        padding: 30px 15px 20px;
+        margin: 10px 0 0;
+        height: auto;
+        font-family: Quicksand, "Lato Light", "Montserrat Alternates Light", "Montserrat Alternates", Arial, serif;
+        font-weight: normal;
+        overflow: hidden;
+        bottom: 0;
+    }
+
+    nav-footer {
+        line-height: normal;
+        display: block;
+        overflow: visible;
+        background-color: #0030AB;
+        height: auto;
+        padding: 12px;
+        margin: 0;
+        font-family: Archivo, serif;
+        font-size: 1em;
+    }
+
+    .backtotop-btn {
+        font-size: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: transparent;
+        color: whitesmoke;
+        padding: 0;
+        margin: -36px 5px 0 0;
+        border: none;
+        float: right;
+    }
+
+    .div-footer-copyright {
+        float: none;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+
+    .footerCONTACT-h2 {
+        color: #1659FF;
+        font-weight: bold;
+        font-size: 1.15em;
+        margin: 0;
+        font-family: Oswald, "Oswald SemiBold", serif;
+    }
+
+    .div-footer-contact {
+        float: none;
+        text-align: center;
+        margin: 30px 0 0;
+        display: block;
+    }
+
+    .div-footer-add {
+        float: none;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    @font-face {
+        font-family: 'Montserrat Alternates';
+        src: url(../fonts/MontserratAlternates-Regular.ttf);
+    }
+
+    .footerCONTACT-email {
+        text-decoration: none;
+        /*  color: #6580EC;*/
+        font-size: 1em;
+        font-weight: 500;
+        font-family: 'Montserrat Alternates', serif;
+    }
+
+    .footerCONTACT-email:hover {
+        text-decoration: underline;
+        color: aliceblue;
+    }
+
+    .footerADDRESS-h2 {
+        color: #1659FF;
+        font-weight: bolder;
+        font-family: Oswald, "Oswald SemiBold", serif;
+        font-size: 1.15em;
+        margin: 0;
+    }
+
+    .div-footer-followus {
+        float: none;
+        align-items: center;
+        margin: 0;
+    }
+
+    .follow-us-h2 {
+        color: #1659FF;
+        font-weight: bolder;
+        font-family: Oswald, "Oswald SemiBold", serif;
+        font-size: 1.15em;
+    }
+
+    .icon-footer-contact {
+        color: #1659FF;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .social-media-icons {
+        /*		color: #3B73FF;*/
+        margin: 1px 0 0;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .footer-FB {
+        /*color: #97B4FF;*/
+        color: whitesmoke;
+        margin: 1px 0 0;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .footer-FB:hover {
+        color: white;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .footer-INSTA {
+        color: whitesmoke;
+        margin: 0 16px;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .footer-INSTA:hover {
+        color: white;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .footer-TWITTER {
+        color: whitesmoke;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .footer-TWITTER:hover {
+        color: white;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .copyright {
+        font-size: 11px;
+        font-weight: normal;
+        margin: 1px;
+    }
+
+    @font-face {
+        font-family: "Sarina";
+        src: url(../fonts/Sarina-Regular.ttf);
+    }
+
+    .ethernalarts {
+        color: #EFD308;
+        font-weight: 400;
+        font-size: 1em;
+        font-family: Sarina, Satisfy, "Kaushan Script", cursive;
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    .ethernalarts:hover,
+    .ethernal:focus {
+        color: #EFD308;
+        text-decoration: underline;
+    }
+
+    .WELCOME-box {
+        margin: 10px 0 0;
+        background-color: #F9F9F9;
+        padding: 20px;
+        font-weight: normal;
+        display: inline-block;
+        color: #010101;
+    }
+
+    @font-face {
+        font-family: 'Oswald SemiBold';
+        src: url(../fonts/Oswald-SemiBold.ttf);
+    }
+
+    .WELCOME-h2 {
+        font-family: "Oswald SemiBold", serif;
+        font-size: 1.3em;
+        text-align: left;
+        font-style: normal;
+        line-height: 1em;
+        font-weight: normal;
+        margin: 0;
+        color: #262626;
+    }
+
+    @font-face {
+        font-family: Archivo;
+        src: url(../fonts/Archivo-Regular.ttf);
+    }
+
+    .WELCOME-content {
+        margin: 8px 0 0;
+        padding: 0;
+        text-align: justify;
+        font-family: Archivo, serif;
+        font-weight: normal;
+        display: block;
+        color: #060000;
+        font-size: 0.8em;
+        line-height: 1.7em;
+    }
+
+    .butWELCOME {
+        margin: 10px 0 0;
+        background-color: #F58100;
+        padding: 10px 20px 10px 20px;
+        display: inline-block;
+        color: #F6F6F6;
+        font-family: Archivo, serif;
+        font-size: 0.7em;
+        text-align: center;
+        font-weight: normal;
+        text-decoration: none;
+        -webkit-box-shadow: -3px 3px 3px #555555;
+        box-shadow: -3px 3px 3px #555555;
+    }
+
+    .butWELCOME:hover,
+    .butWELCOME:focus {
+        color: #F6F6F6;
+        background-color: #DD7400;
+        text-decoration: none;
+    }
+
+    .butWELCOME:active {
+        transform: none;
+        background-color: #D67000;
+    }
+
+
+    .secADMISSION-box {
+        margin: 10px 0 0;
+        display: block;
+        padding-bottom: 20px;
+        background-color: #F9F9F9;
+        border-top-width: 360px;
+    }
+
+    .secADMISSION-h2 {
+        font-family: "Oswald SemiBold", serif;
+        font-weight: normal;
+        color: #262626;
+        padding-left: 20px;
+        font-size: 1.3em;
+        font-style: normal;
+        line-height: 1em;
+        margin-top: 18px;
+    }
+
+    .thumbimgADMISSION {
+        margin: 0;
+        width: 100%;
+    }
+
+    .secADMISSION-content {
+        padding: 0 20px;
+        font-family: Archivo, serif;
+        color: #000000;
+        font-weight: normal;
+        font-size: 0.8em;
+        text-align: justify;
+        margin: 8px 0 0;
+        line-height: 1.7em;
+    }
+
+    .butADMISSION {
+        margin: 16px 0 0 20px;
+        background-color: #F58100;
+        padding: 10px 20px 10px 20px;
+        display: inline-block;
+        color: #FFFFFF;
+        font-family: Archivo, serif;
+        font-size: 8pt;
+        text-align: center;
+        font-weight: normal;
+        -webkit-box-shadow: -3px 3px 3px #555555;
+        box-shadow: -3px 3px 3px #555555;
+    }
+
+    .butADMISSION:hover,
+    .butADMISSION:focus {
+        color: #FFFFFF;
+        background-color: #DD7400;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .butADMISSION:active {
+        transform: none;
+        background-color: #D67000;
+    }
+
+    .secWHYHAGCO-box {
+        background-color: #006600;
+        padding: 30px;
+        margin: 10px 0 0;
+        text-align: center;
+        font-weight: normal;
+        display: block;
+        color: #010101;
+    }
+
+    @font-face {
+        font-family: "Archivo Black";
+        src: url(../fonts/ArchivoBlack-Regular.ttf);
+    }
+
+    .secWHYHAGCO-h2 {
+        font-family: "Oswald SemiBold", sans-serif;
+        font-weight: bold;
+        font-size: 1.95em;
+        margin: -10px 0 0;
+        color: #26B003;
+        text-align: center;
+        text-shadow: 4px 4px 4px #0f3b03;
+    }
+
+    @font-face {
+        font-family: "Chau Philomene One";
+        src: url(../fonts/ChauPhilomeneOne-Regular.ttf);
+    }
+
+    .secWHYHAGCO-list {
+        text-align: center;
+        font-family: "Chau Philomene One", fantasy;
+        font-weight: normal;
+        font-size: 1.1em;
+        color: #B2B2B2;
+        padding: 0;
+        margin-right: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: -12px;
+    }
+
+    .icon-HAGCOlist {
+        color: #26B003;
+        font-size: 20px;
+    }
+
+    .icon-bullet {
+        color: #0D2171;
+        margin-right: 15px;
+    }
+
+    @font-face {
+        font-family: "Alegreya Sans SC ExtraBold";
+        src: url(../fonts/AlegreyaSansSC-ExtraBold.ttf);
+    }
+
+    .butSCHEDULE-TOUR {
+        margin: 23px auto 0;
+        background-color: lime;
+        width: 200px;
+        padding: 10px;
+        display: block;
+        color: #004C00;
+        font-family: Archivo, 'Archivo Medium', serif;
+        font-size: 1.1em;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 0;
+        -webkit-box-shadow: -7px 7px 7px #003700;
+        box-shadow: -7px 7px 7px #003700;
+    }
+
+    .butSCHEDULE-TOUR:hover,
+    .butSCHEDULE-TOUR:focus {
+        color: #004C00;
+        background-color: limegreen;
+        text-decoration: none;
+    }
+
+    .butSCHEDULE-TOUR:active {
+        color: lime;
+        background-color: #004C00;
+        /*-webkit-box-shadow: -4px 4px 4px #005900;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); */
+    }
+
+    .schPROSPECTUS-box {
+        background-color: #e1e1e1;
+        border: 0 solid #252571;
+        padding: 20px;
+        margin: 10px 0 0;
+        text-align: center;
+        /*box-shadow: 7px 7px 7px #363b9b;*/
+    }
+
+    @font-face {
+        font-family: "Archivo Medium";
+        src: url(../fonts/Archivo-Bold.ttf);
+    }
+
+    .schPROSPECTUS-h2 {
+        color: #0D2171;
+        font-family: "Oswald SemiBold", serif;
+        font-size: 2em;
+        font-weight: 600;
+        display: block;
+        margin: 0;
+        text-align: center;
+        /*text-shadow: 4px 4px 4px #230032;*/
+    }
+
+    .schPROSPECTUS-content {
+        color: #060000;
+        text-align: center;
+        font-family: Archivo, serif;
+        font-weight: 500;
+        font-size: 0.84em;
+        padding: 0 30px;
+        margin: 8px 0 0;
+    }
+
+    .pdfICON {
+        margin: 15px 0;
+        display: inline-block;
+        color: red;
+        font-size: 50px;
+    }
+
+    .dwnldPROSPECTUS {
+        margin: 10px auto;
+        display: block;
+        text-decoration: none;
+        background-color: mediumblue;
+        width: 280px;
+        padding: 12px;
+        color: #E7E7E7;
+        font-family: Archivo, "Archivo Medium", Arial, "Arial Narrow", serif;
+        font-size: 1em;
+        font-weight: 500;
+        text-align: center;
+        -webkit-box-shadow: -5px 5px 5px #000047;
+        box-shadow: -5px 5px 5px #000047;
+    }
+
+    .dwnldPROSPECTUS:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        background-color: #00009b;
+    }
+
+    @font-face {
+        font-family: 'Baloo Tammudu';
+        src: url(../fonts/BalooTammudu-Regular.ttf);
+    }
+
+    .INDEX-gallery-div {
+        margin: 10px 0 0;
+        display: block;
+        position: relative;
+    }
+
+    .INDEX-gallery-div > a {
+        position: relative;
+        display: block;
+    }
+
+    .INDEX-news-image {
+        z-index: 1;
+        filter: brightness(40%);
+        box-shadow: 0 3px 3px #7A7A7A;
+        width: 100%;
+    }
+
+    .INDEX-gallery-div:hover .INDEX-news-image,
+    .INDEX-gallery-div:focus .INDEX-news-image {
+        filter: brightness(60%);
+    }
+
+    .INDEX-news-image:active {
+        transform: scale(0.99);
+    }
+
+    .INDEX-news-h2 {
+        color: #FBFBFB;
+        font-size: 2.3em;
+        font-family: "Baloo Tammudu", serif;
+        text-align: center;
+        position: absolute;
+        font-weight: normal;
+        text-shadow: 4px 4px 4px #0D0D0D;
+        top: 45%;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .container-newsletter {
+        width: 100%;
+        margin: 15px 0 0;
+        padding: 0;
+        background-color: transparent;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .newsletter-h2 {
+        color: #1659FF;
+        font-size: 1.2em;
+        /*font-family: Quicksand, "Quicksand Light", "Quicksand Medium";*/
+        font-family: Oswald, "Oswald SemiBold", serif;
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .newsletter-email {
+        float: none;
+        margin: 10px 0 0;
+    }
+
+    .newsletter-submit {
+        margin: -10px 0 0;
+    }
+
+    #newsletter input[type="email"] {
+        float: left;
+        margin: 0 0 0 14px;
+        width: 60%;
+        height: 40px;
+        border: 0 solid #003ACE;
+        background-color: #5384FF;
+        padding: 10px;
+        color: #000000;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: Archivo, Arial, serif;
+    }
+
+    #newsletter input[type="email"]:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 0 solid #1659FF;
+    }
+
+    #newsletter input:focus {
+        background-color: #7099FF;
+        outline: 0;
+        border: 0 solid #1659FF;
+    }
+
+    #newsletter button[type="submit"] {
+        cursor: pointer;
+        margin: -30px 14px 0;
+        float: right;
+        width: 30%;
+        height: 40px;
+        border: 4px none #1659FF;
+        background-color: #003ED8;
+        padding: 10px;
+        color: #E0E0F0;
+        font-weight: normal;
+        font-size: 0.9em;
+        font-family: Archivo, "Alegreya Sans SC", Arial, serif;
+    }
+
+    #newsletter button[type="submit"]:hover {
+        background-color: #E0E0F0;
+        border: 4px none #5353A5;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+        color: #003ED8;
+        font-weight: normal;
+    }
+
+    #newsletter button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    ::-webkit-input-placeholder {
+        color: #888;
+    }
+
+    :-moz-placeholder {
+        color: #888;
+    }
+
+    ::-moz-placeholder {
+        color: #888;
+    }
+
+    :-ms-input-placeholder {
+        color: #888;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .secABOUT-content {
+        font-family: Archivo, serif;
+        color: #010101;
+        font-weight: normal;
+        font-size: 0.9em;
+        text-align: justify;
+        background-color: whitesmoke;
+        width: 100%;
+        padding: 30px;
+        margin: 10px 0 0;
+        -webkit-box-shadow: 4px 4px 4px #5C67E3;
+        box-shadow: 4px 4px 4px #5C67E3;
+    }
+
+    @font-face {
+        font-family: Oswald;
+        src: url(../fonts/Oswald-Regular.ttf);
+    }
+
+    .welcometoHAGCO {
+        font-family: Oswald, serif;
+        text-align: center;
+        line-height: normal;
+        font-size: 1.3em;
+        font-weight: 700;
+        color: #0D2171;
+    }
+
+    .imgABOUTprincipal {
+        margin: 20px auto 0;
+        float: none;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .secABOUTPrincipalLabel {
+        font-family: Archivo, serif;
+        color: #010101;
+        font-weight: normal;
+        font-size: 0.9em;
+        line-height: 1.6em;
+        margin: 7px 0 0;
+        text-align: center;
+    }
+
+    .ABOUTpage-Purpose {
+        font-family: Oswald, serif;
+        font-size: 1.3em;
+        color: #0D2171;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .secADMISSIONpage-box {
+        background-color: whitesmoke;
+        width: 100%;
+        margin: 10px 0 0;
+        text-align: justify;
+        font-weight: normal;
+        display: block;
+        color: #010101;
+        box-shadow: 5px 5px 5px #5C67E3;
+        padding: 30px;
+        font-family: Archivo, Gotham, "Arial Black", "Arial Narrow", sans-serif;
+        font-size: 0.9em;
+    }
+
+    .secADMISSIONpage-h2 {
+        font-family: "Oswald Semibold", serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: 0;
+        color: #0D2171;
+        text-align: center;
+    }
+
+    .ADMISSIONpage-h3 {
+        font-family: Oswald, serif;
+        font-size: 1.18em;
+        color: #0D2171;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+
+    .secADMISSIONpage-content {
+        font-family: Archivo, serif;
+        color: #010101;
+        font-weight: normal;
+        font-size: 0.9em;
+        line-height: 1.6em;
+        padding-right: 75px;
+        padding-left: 40px;
+    }
+
+    .ADMISSIONpage-ol {
+        font-family: Archivo, serif;
+        color: #010101;
+        font-weight: normal;
+        font-size: 1.1em;
+        line-height: 1.6em;
+        list-style-type: decimal;
+        margin-right: 55px;
+    }
+
+    .ADMISSIONpage-ol li {
+        padding-left: 20px;
+    }
+
+    .ADMISSIONpage-ul {
+        font-family: Archivo, "Archivo Medium", Arial, "Arial Black", "Arial Narrow", serif;
+        color: #010101;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.6em;
+        list-style-type: square;
+        font-style: italic;
+        margin-left: 0;
+    }
+
+    .ACADEMICSpage-ul {
+        font-family: Archivo, serif;
+        color: #010101;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.6em;
+        list-style-type: square;
+        font-style: italic;
+        margin-left: 0;
+    }
+
+    .ADMISSIONpage-email {
+        font-family: Archivo, serif;
+        color: #0D47A1;
+        font-weight: bold;
+        font-size: 0.95em;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .butACTIVITYpage {
+        margin: 18px auto;
+        width: 160px;
+        background-color: #f58600;
+        padding: 10px;
+        display: block;
+        color: whitesmoke;
+        font-family: Archivo, serif;
+        font-size: 0.9em;
+        text-align: center;
+        font-weight: normal;
+        border-radius: 0;
+        -webkit-box-shadow: -6px 6px 6px #371b00;
+        box-shadow: -6px 6px 6px #371b00;
+    }
+
+    .butACTIVITYpage:hover,
+    .butACTIVITYpage:focus {
+        color: whitesmoke;
+        background-color: #c36300;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .butACTIVITYpage:active {
+        transform: scale(0.99);
+        border: thin #602A88;
+    }
+
+    .secCONTACT-box {
+        background-color: #e1e1e1;
+        padding: 30px 20px 20px;
+        margin: 10px 0 0;
+        font-family: Archivo, Arial, Lato, serif;
+        font-size: 1em;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: #010101;
+    }
+
+    @font-face {
+        font-family: 'Yesteryear';
+        src: url(../fonts/Yesteryear-Regular.ttf);
+    }
+
+    #CONTACTpage-h2 {
+        font-family: "Oswald SemiBold", serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #23234D;
+        text-align: center;
+        text-decoration: underline;
+        margin-left: 0;
+        margin-top: -10px;
+    }
+
+    #CONTACTpage-h1 {
+        font-family: Archivo, serif;
+        font-weight: normal;
+        font-size: 0.9em;
+        color: black;
+        text-align: center;
+        margin: -10px 0 0;
+    }
+
+    fieldset {
+        margin: 5px auto;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="subject"],
+    #contact textarea {
+        width: 100%;
+        border: 0 solid #202044;
+        /*background-color: #9E9ECE;*/
+        background-color: #c3c3c3;
+        margin: 0 0 15px -30px;
+        padding: 13px 0 13px 35px;
+        color: #000000;
+        font-size: 0.8em;
+        font-weight: 600;
+        font-family: Archivo, "Archivo Medium", Arial, "Arial Black", "Arial Narrow", serif;
+    }
+
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact input[type="subject"]:hover,
+    #contact textarea:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 0 solid #1659FF;
+    }
+
+    #contact textarea {
+        height: 150px;
+        width: 100%;
+        resize: vertical;
+        border: 0 solid #202044;
+    }
+
+    #contact button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: 0 none #1659FF;
+        border-radius: 0;
+        /*background-color: #16162E;*/
+        background-color: #191919;
+        padding: 20px;
+        color: whitesmoke;
+        font-size: 1em;
+        text-align: center;
+        font-family: Oswald, "Oswald SemiBold", serif;
+    }
+
+    #contact button[type="submit"]:hover {
+        /*background-color: #1F1F42;*/
+        background-color: #2d2d2d;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+        color: whitesmoke;
+    }
+
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    #contact input:focus,
+    #contact textarea:focus {
+        background-color: #afafaf;
+        outline: 0;
+        border: 0 solid #1659FF;
+    }
+
+
+    /*position should be relative and z-index greater than one*/
+    .icorn {
+        position: relative;
+        float: left;
+        margin-left: 8px;
+        margin-top: 14px;
+        z-index: 2;
+        color: #181831;
+    }
+
+    .icorn-persons {
+        position: relative;
+        float: left;
+        margin-left: 8px;
+        margin-top: 30px;
+        z-index: 2;
+        color: #181831;
+    }
+
+    .icorn-submit {
+        float: none;
+        color: whitesmoke;
+        margin-left: -10px;
+        margin-top: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .SCHEDULE-box {
+        /*background-color: #47478F;*/
+        background-color: #e1e1e1;
+        width: 100%;
+        padding: 30px 20px 20px;
+        margin: 10px 0 0;
+        text-align: center;
+        font-family: Archivo, Arial, Lato, serif;
+        font-size: 1em;
+        font-weight: normal;
+        display: block;
+        color: #010101;
+    }
+
+    #SCHEDULEpage-h2 {
+        font-weight: bold;
+        font-size: 1.9em;
+        color: #262652;
+        text-align: center;
+        margin: -10px 0 0;
+        font-family: "Oswald SemiBold", serif;
+    }
+
+    #SCHEDULEpage-h1 {
+        font-family: Archivo, sans-serif;
+        font-weight: normal;
+        font-size: 0.9em;
+        color: black;
+        margin-left: 0;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    @media screen and (min-width: 425px) {
+        body {
+            width: 405px;
+        }
+    }
