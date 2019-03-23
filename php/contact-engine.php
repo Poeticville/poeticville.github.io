@@ -34,7 +34,7 @@ $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 // redirect to success page
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contact-thanks.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contact-thanks-m.html\">";
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
