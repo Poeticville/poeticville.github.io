@@ -51,29 +51,39 @@
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<ul class="fa-ul">
 
-			<li><a href="index-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-home"></i></span>Home</a></li>
+			<li><a href="index-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-home"></i></fieldset>Home</a></li>
 
-			<li><a href="admissions-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-graduation-cap"></i></span>Admission</a></li>
+			<li><a href="admissions-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-graduation-cap"></i></fieldset>Admission</a></li>
 
-			<li><a href="academics-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-book-reader"></i></span>Academics</a></li>
+			<li><a href="academics-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-book-reader"></i></fieldset>Academics</a></li>
 
-			<li><a href="activities-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-running"></i></span>Activities</a></li>
+			<li><a href="activities-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-running"></i></fieldset>Activities</a></li>
 
-			<li><a href="news-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-tv"></i></span>News</a></li>
+			<li><a href="news-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-tv"></i></fieldset>News</a></li>
 
-			<li><a href="facilities-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-bed"></i></span>Facilities</a></li>
+			<li><a href="facilities-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-bed"></i></fieldset>Facilities</a></li>
 
-			<li><a href="gallery-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></span>Gallery</a></li>
+			<li><a href="gallery-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></fieldset>Gallery</a></li>
 
-			<li><a href="about-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-users"></i></span>About</a></li>
+			<li><a href="about-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-users"></i></fieldset>About</a></li>
 
-			<li><a href="contact-m.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-envelope"></i></span>Contact</a></li>
+			<li><a href="contact-m.html"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-envelope"></i></fieldset>Contact</a></li>
 
-			<li><a href="schedule-m.html" class="active"><span class="fa-li"><i class="mobile-menu-icon fas fa-calendar-check"></i></span>Schedule a Tour</a></li>
+			<li><a href="schedule-m.html" class="active"><fieldset class="fa-li"><i class="mobile-menu-icon fas fa-calendar-check"></i></fieldset>Schedule a Tour</a></li>
 		</ul>
 	</div>
 
 	<style type="text/css">
+		div.required {
+			margin: 20px auto 25px;
+			text-align: center;
+			font-family: Archivo, Arial, Lato, serif;
+			font-size: 0.9em;
+			font-weight: normal;
+			display: block;
+			color: #010101;
+			font-style: italic;
+		}
 
 		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 			color: #373737;
@@ -89,45 +99,55 @@
 		}
 	</style>
 
-
 	<div class="SCHEDULE-box">
 
 		<p id="CONTACTpage-h2">Schedule a Tour</p>
 			<p id="CONTACTpage-h1">Come and visit our campus and meet our wonderful teachers and students</p>
-			<br>	
-				<form id="contact" name="contact" action="contact-engine.php" method="POST"> 				
-					
-					<div class="fieldset-con-left">
-						<fieldset>
-							<i class="icorn fas fa-user-alt"></i>&nbsp;<input placeholder="Full Name" type="text" tabindex="1" required>							
-						</fieldset>
-						
-						<fieldset>
-							<i class="icorn fas fa-envelope"></i>&nbsp;<input placeholder="Email" type="email" tabindex="2" required>
-						</fieldset>	
-						
-						<fieldset>
-							<i class="icorn fas fa-phone"></i>&nbsp;<input placeholder="Phone Number" type="text" maxlength="30" tabindex="3" required>
-						</fieldset>
 
-						<fieldset>
-							<i class="icorn fas fa-user-friends"></i>&nbsp;<input placeholder="Number of persons coming" type="text" maxlength="15" tabindex="4" required>
-						</fieldset>
+			<div class="required">Fields marked with * are required</div>
+
+				<form id="contact" name="contact" action="contact-engine.php" method="POST">
+					<fieldset>
+						<div>
+							<i class="icorn fas fa-user-alt"></i><input placeholder="Full Name *" name="Name" type="text" tabindex="1" required>
+						</div>
 						
-						<fieldset>
-							<i class="icorn fas fa-calendar-day"></i>&nbsp;<input placeholder="Date you intend coming" type="text" tabindex="5" required>
-						</fieldset>																			
+						<div>
+							<i class="icorn fas fa-envelope"></i><input placeholder="Email" name="Email" type="email" tabindex="2">
+						</div>
+						
+						<div>
+							<i class="icorn fas fa-phone"></i><input placeholder="Phone Number *" name="Phone" type="tel" maxlength="14" tabindex="3" required>
+						</div>
+
+						<div>
+							<i class="icorn fas fa-user-friends"></i><input placeholder="Number of persons coming *" name="Number_of_Persons" type="number" tabindex="4" required>
+						</div>
+
+						<div>
+							<i class="icorn fas fa-globe"></i><input placeholder="Your location (City, State) *" type="text" name="Location" tabindex="5" required>
+						</div>
+						
+						<div>
+							<i class="icorn fas fa-calendar-check"></i><input placeholder="Date you intend coming *" name="Arrival_Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" tabindex="6" required>
+						</div>
 					
-						<fieldset>
-							<i class="icorn fas fa-pencil-alt"></i>&nbsp;<textarea placeholder="Is there anything we should know about your visit?" tabindex="6" required></textarea>
-						</fieldset>
+						<div>
+							<i class="icorn fas fa-pencil-alt"></i><textarea placeholder="Is there anything we should know about your visit?" name="Message" tabindex="7"></textarea>
+						</div>
+
+						<div>
+							<button type="reset" class="reset" tabindex="7">
+								Reset
+							</button>
+						</div>
 						
-						<fieldset>
-							<button name="submit" type="submit" id="contact-submit" tabindex="6" data-submit="...Sending">
+						<div>
+							<button type="submit" id="contact-submit" tabindex=8" data-submit="...Sending">
 								<i class="fas fa-1x fa-paper-plane"></i>&nbsp;&nbsp;Submit								
 							</button>					
-						</fieldset>	
-					</div>
+						</div>
+					</fieldset>
 				</form>
 		</div>
 
@@ -150,7 +170,7 @@
 		<div class="div-footer-contact">
 			<p class="footerCONTACT-h2">CONTACT US</p>
 			<p>
-				<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp;+2348036729608, +2348166237094<br />
+				<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp; +2348036729608, +2347019653553<br />
 				<i class="icon-footer-contact fas fa-envelope-open"></i>&nbsp;&nbsp;<a href="mailto:handmaidsgirlscollege@gmail.com" class="footerCONTACT-email">handmaidsgirlscollege@gmail.com</a>
 			</p>
 		</div>
@@ -174,7 +194,7 @@
 
 				<fieldset class="newsletter-submit">
 					<button name="submit" type="submit" tabindex="8" data-submit="...Sending">
-						<span>SUBSCRIBE</span>
+						<fieldset>SUBSCRIBE</fieldset>
 					</button>
 				</fieldset>
 			</form>

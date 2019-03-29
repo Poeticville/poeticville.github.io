@@ -74,6 +74,16 @@
 	</div>
 
 	<style type="text/css">
+		div.required {
+			margin: 20px auto 25px;
+			text-align: center;
+			font-family: Archivo, Arial, Lato, serif;
+			font-size: 0.9em;
+			font-weight: normal;
+			display: block;
+			color: #010101;
+			font-style: italic;
+		}
 
 		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 			color: #373737;
@@ -93,37 +103,43 @@
 
 		<p id="CONTACTpage-h2">Contact Us</p>
 			<p id="CONTACTpage-h1">Questions? Feel free to reach us. We'd like to hear from you.</p>
-			<br>		
-				
-				<form id="contact" name="contact" action="contact-engine.php" method="POST"> 				
+
+			<div class="required">Fields marked with * are required</div>
+
+				<form id="contact" name="contact" action="php/contact-engine.php" method="POST">
+					<fieldset>
+						<div>
+							<i class="icorn fas fa-user-alt"></i><input placeholder="Full Name *" name="Name" type="text" tabindex="1" required>
+						</div>
+						
+						<div>
+							<i class="icorn fas fa-envelope"></i><input placeholder="Email *" name="Email" type="email" tabindex="2" required>
+						</div>
+						
+						<div>
+							<i class="icorn fas fa-phone"></i><input placeholder="Phone Number *" name="Phone" type="tel" maxlength="30" tabindex="3" required>
+						</div>
+						
+						<div>
+							<i class="icorn fas fa-folder"></i><input placeholder="Subject" name="Subject" type="text" tabindex="4">
+						</div>
 					
-					<div>
-						<fieldset>
-							<i class="icorn fas fa-user-alt"></i>&nbsp;<input placeholder="Full Name" type="text" tabindex="1" required>							
-						</fieldset>
+						<div>
+							<i class="icorn fas fa-pencil-alt"></i><textarea placeholder="Ask us anything...*" name="Message" tabindex="5" required></textarea>
+						</div>
+
+						<div>
+							<button type="reset" class="reset" tabindex="6">
+								Reset
+							</button>
+						</div>
 						
-						<fieldset>
-							<i class="icorn fas fa-envelope"></i>&nbsp;<input placeholder="Email" type="email" tabindex="2" required>
-						</fieldset>	
-						
-						<fieldset>
-							<i class="icorn fas fa-phone"></i>&nbsp;<input placeholder="Phone Number" type="text" maxlength="30" tabindex="3" required>					
-						</fieldset>	
-						
-						<fieldset>
-							<i class="icorn fas fa-folder"></i>&nbsp;<input placeholder="Subject" type="text" tabindex="4" required>
-						</fieldset>										
-					
-						<fieldset>
-							<i class="icorn fas fa-pencil-alt"></i>&nbsp;<textarea placeholder="Ask us anything..." tabindex="5" required></textarea>							
-						</fieldset>
-						
-						<fieldset>
-							<button name="submit" type="submit" id="contact-submit" tabindex="6" data-submit="...Sending">
-								<i class="icorn-submit fas fa-1x fa-paper-plane"></i>&nbsp;&nbsp;Get In Touch						
+						<div>
+							<button type="submit" id="contact-submit" tabindex="7" data-submit="...Sending">
+								<i class="fas fa-1x fa-paper-plane"></i>&nbsp;&nbsp;Get In Touch
 							</button>					
-						</fieldset>	
-					</div>
+						</div>
+					</fieldset>
 				</form>				
 		</div>
 
@@ -147,6 +163,7 @@
 			<p class="footerCONTACT-h2">CONTACT US</p>
 			<p>
 				<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp;+2348036729608, +2348166237094<br />
+				<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp; +2348130270130, +2348160684120<br />
 				<i class="icon-footer-contact fas fa-envelope-open"></i>&nbsp;&nbsp;<a href="mailto:handmaidsgirlscollege@gmail.com" class="footerCONTACT-email">handmaidsgirlscollege@gmail.com</a>
 			</p>
 		</div>

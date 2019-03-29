@@ -1,10 +1,11 @@
 <?php
 
 $EmailTo = "handmaidsgirlscollege@gmail.com";
-$EmailFrom = Trim(stripslashes($_POST['EmailFrom']));
+$EmailFrom = Trim(stripslashes($_POST['Email']));
 $Name = Trim(stripslashes($_POST['Name']));
+$Tel = Trim(stripslashes($_POST['Phone']));
 $Email = Trim(stripslashes($_POST['Email']));
-$Tel = Trim(stripslashes($_POST['Tel']));
+$Subject = Trim(stripslashes($_POST['Subject']));
 $Message = Trim(stripslashes($_POST['Message']));
 
 // validation
@@ -22,9 +23,12 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $Email;
 $Body .= "\n";
-$Body .= "Tel: ";
+$Body .= "Phone: ";
 $Body .= $Tel;
 $Body .= "\n";
+$Subject .= "Subject: ";
+$Subject .= $Subject;
+$Subject .= "\n";
 $Body .= "Message: ";
 $Body .= $Message;
 $Body .= "\n";
