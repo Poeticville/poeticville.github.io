@@ -191,18 +191,21 @@
 
         <div class="container-newsletter">
             <p class="newsletter-h2">STAY WITH US</p>
+                <div>
+                    <form id="newsletter" action="newsletter-signup.php" method="post">
+                        <fieldset>
+                            <div class="newsletter-email">
+                                <input placeholder="Email Address" name="email" type="email" tabindex="1" required>
+                            </div>
 
-            <form id="newsletter" method="post">
-                <fieldset class="newsletter-email">
-                    <input placeholder="Email Address" type="email" tabindex="7">
-                </fieldset>
-
-                <fieldset class="newsletter-submit">
-                    <button name="submit" type="submit" tabindex="8" data-submit="...Sending">
-                        <span>SUBSCRIBE</span>
-                    </button>
-                </fieldset>
-            </form>
+                            <div>
+                                <button name=submit type="submit" tabindex="2" value="Submit">
+                                    <span>SUBSCRIBE</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
         </div>
 
         <div class="div-footer-copyright">

@@ -106,7 +106,7 @@
 
 			<div class="required">Fields marked with * are required</div>
 
-				<form id="contact" name="contact" action="contact-engine.php" method="POST">
+				<form id="contact" action="schedule-engine.php" method="POST">
 					<fieldset>
 						<div>
 							<i class="icorn fas fa-user-alt"></i><input placeholder="Full Name *" name="Name" type="text" tabindex="1" required>
@@ -121,7 +121,7 @@
 						</div>
 
 						<div>
-							<i class="icorn fas fa-user-friends"></i><input placeholder="Number of persons coming *" name="Number_of_Persons" type="number" tabindex="4" required>
+							<i class="icorn fas fa-user-friends"></i><input placeholder="Number of persons coming *" name="Persons" type="number" tabindex="4" required>
 						</div>
 
 						<div>
@@ -129,21 +129,21 @@
 						</div>
 						
 						<div>
-							<i class="icorn fas fa-calendar-check"></i><input placeholder="Date you intend coming *" name="Arrival_Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" tabindex="6" required>
+							<i class="icorn fas fa-calendar-check"></i><input placeholder="Date you intend coming *" name="Arrival-Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" tabindex="6" required>
 						</div>
 					
 						<div>
-							<i class="icorn fas fa-pencil-alt"></i><textarea placeholder="Is there anything we should know about your visit?" name="Message" tabindex="7"></textarea>
+							<i class="icorn fas fa-pencil-alt"></i><textarea placeholder="Is there anything else we should know about your visit?" name="Message" tabindex="7"></textarea>
 						</div>
 
 						<div>
-							<button type="reset" class="reset" tabindex="7">
+							<button type="reset" class="reset" tabindex="8">
 								Reset
 							</button>
 						</div>
 						
 						<div>
-							<button type="submit" id="contact-submit" tabindex=8" data-submit="...Sending">
+							<button type="submit" id="contact-submit" tabindex="9" data-submit="...Sending">
 								<i class="fas fa-1x fa-paper-plane"></i>&nbsp;&nbsp;Submit								
 							</button>					
 						</div>
