@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Handmaids Girls College - Subscribe</title>
+		<title>Handmaids Girls College - Unsubscribe</title>
 
 		<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 		<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
@@ -22,12 +22,12 @@
 		<script src="js/mobile-menu-side.js"></script>
 		<script defer src="css/fontawesome-free-5.7.2-web/js/all.js"></script>
 	</head>
-	
+
 <body>
 
 	<nav>
 		<div class="navlistitem">
-			<a href="subscribe-thanks-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Subscribe</a>
+			<a href="contact-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Unsubscribe</a>
 		</div>
 
 		<div>
@@ -74,42 +74,15 @@
 	</div>
 
 	<style type="text/css">
-		div.contact-thanks-BOX {
-			background-color: #e1e1e1;
-			width: 100%;
-			padding: 30px;
-			margin: 10px 0 0;
-			font-family: Archivo, Arial, Lato, serif;
-			font-size: 1em;
-			font-weight: normal;
+		div.required {
+			margin: 20px auto 25px;
 			text-align: center;
+			font-family: Archivo, Arial, Lato, serif;
+			font-size: 0.9em;
+			font-weight: normal;
 			display: block;
-			color: Black;
-		}
-
-		div.butRETURNTOCONTACT {
-            cursor: pointer;
-            margin:  0;
-            font-size: 0.9em;
-            font-weight: 500;
-            text-align: center;
-            font-family: Archivo, serif;
-            background-color: transparent;
-            border: 1px solid #191919;;
-            padding: 12px;
-            width: 230px;
-            color: #191919;
-        }
-
-        div.butRETURNTOCONTACT:hover {
-            text-decoration: none;
-            font-weight: 500;
-            background-color: #232323;
-            color: whitesmoke;
-		}
-
-		a:hover{
-			text-decoration: none;
+			color: #010101;
+			font-style: italic;
 		}
 
 		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -126,18 +99,32 @@
 		}
 	</style>
 
-		<div class="contact-thanks-BOX">
+	<div class="secCONTACT-box">
 
-			<p id="CONTACTpage-h2">Thank You</p>
-				<p id="CONTACTpage-h1">Welcome to the family. You have been successfully added to our mailing list.
-					Please check your inbox from time to time and keep an eye on our <a href="news-m.html">News</a> page.</p>
-				<br>
-			<a href="index-m.html">
-				<div class="butRETURNTOCONTACT">
-					<i class="fas fa-1x fa-arrow-left"></i>&nbsp;&nbsp;Return to Home Page
-				</div>
-			</a>
+		<p id="CONTACTpage-h2">Unsubscribe</p>
+			<p id="CONTACTpage-h1">Please enter the already subscribed email you want unsubscribed.</p><br>
+
+				<form id="contact" action="contact-engine.php" method="POST">
+					<fieldset>
+						<div>
+							<i class="icorn fas fa-envelope"></i><input placeholder="Email *" name="Email" type="email" tabindex="2" required>
+						</div>
+
+						<div>
+							<button type="reset" class="reset" tabindex="6">
+								Reset
+							</button>
+						</div>
+						
+						<div>
+							<button type="submit" id="contact-submit" tabindex="7" data-submit="...Sending">
+								<i class="fas fa-1x fa-paper-plane"></i>&nbsp;&nbsp;Unsubscribe
+							</button>					
+						</div>
+					</fieldset>
+				</form>				
 		</div>
+
 	<footer>
 		<div class="div-footer-followus">
 			<p class="footerCONTACT-h2">FOLLOW US</p>
@@ -154,15 +141,14 @@
 			</p>
 		</div>
 
-
 		<div class="div-footer-contact">
 			<p class="footerCONTACT-h2">CONTACT US</p>
 			<p>
 				<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp; +2348036729608, +2347019653553<br />
+				<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp; +2348130270130, +2348160684120<br />
 				<i class="icon-footer-contact fas fa-envelope-open"></i>&nbsp;&nbsp;<a href="mailto:handmaidsgirlscollege@gmail.com" class="footerCONTACT-email">handmaidsgirlscollege@gmail.com</a>
 			</p>
 		</div>
-
 
 		<div class="div-footer-add">
 			<p class="footerADDRESS-h2">FIND US</p>
@@ -200,7 +186,7 @@
 
 	<nav-footer>
 		<div class="navlistitem">
-			<a href="contact-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Subscribe</a>
+			<a href="unsubscribe-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Unsubscribe</a>
 		</div>
 
 		<div>
@@ -210,5 +196,6 @@
 		</div>
 	</nav-footer>
 </body>
+
 
 </html>
