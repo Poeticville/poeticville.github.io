@@ -149,8 +149,9 @@
 			<p class="ABOUTpage-Purpose">FACILITIES</p>	
 			<p>
 				HAGCO has all it takes to give your child/ward a quality education. Modern facilities like a well-stocked library,
-				a functional dormitory, a working chemistry laboratory, spacious classrooms, fields for games and ICT LAB for computer studies are put in place for effective teaching and learning.
-				As a boarding school, your child/ward will have enough time for study, co-curricular and spiritual activities, socializing with peers and making friends within and outside the country.
+				a functional dormitory, a working chemistry laboratory, spacious classrooms, fields for games and ICT LAB for computer studies
+				are put in place for effective teaching and learning. As a boarding school, your child/ward will have enough time for
+				study, co-curricular and spiritual activities, socializing with peers and making friends within and outside the country.
 			</p>
 			
 			
@@ -212,18 +213,27 @@
 
 		<div class="container-newsletter">
 			<p class="newsletter-h2">STAY WITH US</p>
+			<div>
+				<form id="newsletter" action="newsletter-signup.php" method="post">
+					<fieldset>
+						<div class="newsletter-email">
+							<input placeholder="Email Address" name="email" type="email" tabindex="1" required>
+						</div>
 
-			<form id="newsletter" method="post">
-				<fieldset class="newsletter-email">
-					<input placeholder="Email Address" type="email" tabindex="7">
-				</fieldset>
+						<div>
+							<button name=submit type="submit" tabindex="2" value="Submit">
+								<span>Subscribe</span>
+							</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
 
-				<fieldset class="newsletter-submit">
-					<button name="submit" type="submit" tabindex="8" data-submit="...Sending">
-						<span>SUBSCRIBE</span>
-					</button>
-				</fieldset>
-			</form>
+		<div class="unscubscribe">
+			<a href="unsubscribe-m.html">
+				Unsubscribe
+			</a>
 		</div>
 
 		<div class="div-footer-copyright">

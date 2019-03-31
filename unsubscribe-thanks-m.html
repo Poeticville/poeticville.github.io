@@ -22,12 +22,12 @@
 		<script src="js/mobile-menu-side.js"></script>
 		<script defer src="css/fontawesome-free-5.7.2-web/js/all.js"></script>
 	</head>
-
+	
 <body>
 
 	<nav>
 		<div class="navlistitem">
-			<a href="contact-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Unsubscribe</a>
+			<a href="subscribe-thanks-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Unsubscribe</a>
 		</div>
 
 		<div>
@@ -74,15 +74,42 @@
 	</div>
 
 	<style type="text/css">
-		div.required {
-			margin: 20px auto 25px;
-			text-align: center;
+		div.contact-thanks-BOX {
+			background-color: #e1e1e1;
+			width: 100%;
+			padding: 30px;
+			margin: 10px 0 0;
 			font-family: Archivo, Arial, Lato, serif;
-			font-size: 0.9em;
+			font-size: 1em;
 			font-weight: normal;
+			text-align: center;
 			display: block;
-			color: #010101;
-			font-style: italic;
+			color: Black;
+		}
+
+		div.butRETURNTOCONTACT {
+            cursor: pointer;
+            margin:  0;
+            font-size: 0.9em;
+            font-weight: 500;
+            text-align: center;
+            font-family: Archivo, serif;
+            background-color: transparent;
+            border: 1px solid #191919;;
+            padding: 12px;
+            width: 230px;
+            color: #191919;
+        }
+
+        div.butRETURNTOCONTACT:hover {
+            text-decoration: none;
+            font-weight: 500;
+            background-color: #232323;
+            color: whitesmoke;
+		}
+
+		a:hover{
+			text-decoration: none;
 		}
 
 		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -99,26 +126,18 @@
 		}
 	</style>
 
-	<div class="secCONTACT-box">
+		<div class="contact-thanks-BOX">
 
-		<p id="CONTACTpage-h2">Unsubscribe</p>
-			<p id="CONTACTpage-h1">Please enter the subscribed email you want unsubscribed.</p><br>
-
-				<form id="contact" action="contact-engine.php" method="POST">
-					<fieldset>
-						<div>
-							<i class="icorn fas fa-envelope"></i><input placeholder="Email *" name="Email" type="email" tabindex="2" required>
-						</div>
-
-						<div>
-							<button type="submit" id="contact-submit" tabindex="7" data-submit="...Sending">
-								Unsubscribe
-							</button>
-						</div>
-					</fieldset>
-				</form>				
+			<p id="CONTACTpage-h2">Goodbye</p>
+				<p id="CONTACTpage-h1">Welcome to the family. You have been successfully unsubscribed from our mailing list.
+					You can still keep in touch by keeping an eye on our <a href="news-m.html">News</a> page.</p>
+				<br>
+			<a href="index-m.html">
+				<div class="butRETURNTOCONTACT">
+					<i class="fas fa-1x fa-arrow-left"></i>&nbsp;&nbsp;Return to Home Page
+				</div>
+			</a>
 		</div>
-
 	<footer>
 		<div class="div-footer-followus">
 			<p class="footerCONTACT-h2">FOLLOW US</p>
@@ -135,6 +154,7 @@
 			</p>
 		</div>
 
+
 		<div class="div-footer-contact">
 			<p class="footerCONTACT-h2">CONTACT US</p>
 			<p>
@@ -142,6 +162,7 @@
 				<i class="icon-footer-contact fas fa-envelope-open"></i>&nbsp;&nbsp;<a href="mailto:handmaidsgirlscollege@gmail.com" class="footerCONTACT-email">handmaidsgirlscollege@gmail.com</a>
 			</p>
 		</div>
+
 
 		<div class="div-footer-add">
 			<p class="footerADDRESS-h2">FIND US</p>
@@ -188,7 +209,7 @@
 
 	<nav-footer>
 		<div class="navlistitem">
-			<a href="unsubscribe-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Unsubscribe</a>
+			<a href="contact-m.html" class="active"><i class="fas fa-at"></i>&nbsp;&nbsp;Unsubscribe</a>
 		</div>
 
 		<div>
@@ -198,6 +219,5 @@
 		</div>
 	</nav-footer>
 </body>
-
 
 </html>
