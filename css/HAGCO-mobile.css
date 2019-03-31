@@ -18,7 +18,7 @@
         font-family: 'Material Icons', serif;
         font-weight: normal;
         font-style: normal;
-        font-size: 24px; /* Preferred icon size */
+        font-size: 25px; /* Preferred icon size */
         display: inline-block;
         line-height: 1;
         text-transform: none;
@@ -60,7 +60,6 @@
         text-decoration: none;
     }
 
-
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     /*@media screen and (max-width: 500px) {*/
     /*.topnav a:not(:first-child) {display: none;}*/
@@ -72,12 +71,12 @@
 
     nav {
         line-height: normal;
-        display: block;
-        text-align: justify;
+        display: block;        
         background-color: #0030AB;
         height: auto;
         padding: 12px;
         margin: 0;
+        /*z-index: 5;*/
     }
 
     header {
@@ -593,9 +592,9 @@
         font-size: 1em;
         font-weight: 500;
         text-align: center;
-        -webkit-box-shadow: -5px 5px 5px #000047;
-        box-shadow: -5px 5px 5px #000047;
-    }
+        -webkit-box-shadow: 0 7px 10px 0 #000037;
+        box-shadow: 0 7px 10px 0 #000037;
+        }
 
     .dwnldPROSPECTUS:hover {
         color: whitesmoke;
@@ -668,13 +667,12 @@
     }
 
     .newsletter-email {
-        float: none;
         margin: 10px 0 0;
     }
 
-    .newsletter-submit {
-        margin: -10px 0 0;
-    }
+    /*.newsletter-submit {*/
+        /*margin: -10px 0 0;*/
+    /*}*/
 
     #newsletter input[type="email"] {
         float: left;
@@ -705,7 +703,7 @@
 
     #newsletter button[type="submit"] {
         cursor: pointer;
-        margin: -30px 14px 0;
+        margin: -40px 14px 0;
         float: right;
         width: 30%;
         height: 40px;
@@ -835,18 +833,18 @@
         color: #0D2171;
         text-align: center;
         font-weight: bolder;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
-    .secADMISSIONpage-content {
-        font-family: Archivo, serif;
-        color: #010101;
-        font-weight: normal;
-        font-size: 0.9em;
-        line-height: 1.6em;
-        padding-right: 75px;
-        padding-left: 40px;
-    }
+    /*.secADMISSIONpage-content {*/
+        /*font-family: Archivo, serif;*/
+        /*color: #010101;*/
+        /*font-weight: normal;*/
+        /*font-size: 0.9em;*/
+        /*line-height: 1.6em;*/
+        /*padding-right: 75px;*/
+        /*padding-left: 40px;*/
+    /*}*/
 
     .ADMISSIONpage-ol {
         font-family: Archivo, serif;
@@ -971,19 +969,6 @@
         /*content: "" !important;*/
     /*}*/
 
-    /*.location-dropdownmenu {*/
-        /*width: 100%;*/
-        /*overflow: auto;*/
-        /*border: 0 solid #202044;*/
-        /*background-color: #c3c3c3;*/
-        /*margin: 0 auto 20px;*/
-        /*padding: 13px 35px;*/
-        /*color: #000000;*/
-        /*font-size: 0.8em;*/
-        /*font-weight: 600;*/
-        /*font-family: Archivo, "Archivo Medium", Arial, "Arial Black", "Arial Narrow", serif;*/
-    /*}*/
-
     /*.location-dropdownmenu select:focus,*/
     /*.location-dropdownmenu select.active {*/
         /*outline: 0;*/
@@ -1082,7 +1067,6 @@
         outline: 0;
         border: 0 solid #1659FF;
     }
-
 
     /*position should be relative and z-index greater than one*/
     .icorn {

@@ -17,7 +17,7 @@
       height: 100%; /* 100% Full-height */
       width: 0; /* 0 width - change this with JavaScript */
       position: fixed; /* Stay in place */
-      z-index: 3; /* Stay on top */
+      z-index: 6; /* Stay on top */
       top: 0;
       left: 0;
       background-color: #111;
@@ -73,9 +73,12 @@
         background-color: transparent;
         color: whitesmoke;
         padding: 15px;
-        margin-top: -48px;
-        margin-right: -7px;
-        display: block;
+        /*margin-top: -48px;*/
+        /*margin-left: -7px;*/
+        top: 13px;
+        right: 14px;
+        display: inline-block;
+        position: absolute;
         border: none;
         float: right;
     }
