@@ -18,7 +18,7 @@
     $query = "INSERT INTO email_list(email)
     VALUES('$email')";
 
-    echo $query;
+    // echo $query;
 
     mysqli_query ($dbc, $query)
     or exit( mysqli_error($dbc) );
