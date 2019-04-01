@@ -361,7 +361,7 @@
     .butWELCOME {
         margin: 10px 0 0;
         background-color: #F58100;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px;
         display: inline-block;
         color: #F6F6F6;
         font-family: Archivo, serif;
@@ -424,11 +424,11 @@
     .butADMISSION {
         margin: 16px 0 0 20px;
         background-color: #F58100;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px;
         display: inline-block;
         color: #FFFFFF;
         font-family: Archivo, serif;
-        font-size: 8pt;
+        font-size: 0.7em;
         text-align: center;
         font-weight: normal;
         -webkit-box-shadow: -3px 3px 3px #555555;
@@ -487,10 +487,7 @@
         font-size: 1.1em;
         color: #B2B2B2;
         padding: 0;
-        margin-right: 10px;
-        margin-left: 0;
-        margin-bottom: 0;
-        margin-top: -12px;
+        margin: -12px 10px 0 0;
     }
 
     .icon-HAGCOlist {
@@ -712,7 +709,7 @@
         padding: 10px;
         color: #E0E0F0;
         font-weight: normal;
-        font-size: 0.9em;
+        font-size: 1em;
         font-family: Archivo, "Alegreya Sans SC", Arial, serif;
     }
 
@@ -827,24 +824,30 @@
         font-weight: bolder;
     }
 
-    .ADMISSIONpage-h3 > a {
-        font-family: Oswald, serif;
-        font-size: 1em;
-        color: #0D2171;
+    .viewmorepix {
         text-align: center;
-        font-weight: bolder;
-        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: Archivo, serif;
     }
 
-    /*.secADMISSIONpage-content {*/
-        /*font-family: Archivo, serif;*/
-        /*color: #010101;*/
-        /*font-weight: normal;*/
-        /*font-size: 0.9em;*/
-        /*line-height: 1.6em;*/
-        /*padding-right: 75px;*/
-        /*padding-left: 40px;*/
-    /*}*/
+    .viewmorepix > a {
+        font-family: Archivo, serif;
+        font-size: 1em;
+        color: whitesmoke;
+        text-align: center;
+        font-weight: normal;
+        padding: 15px;
+        text-decoration: none;
+        background-color: #0d219b;
+        width: 80%;
+        margin: 15px 0 0;
+    }
+
+    .viewmorepix > a:hover {
+        color: whitesmoke;
+        background-color: #0d22b9;
+    }
 
     .ADMISSIONpage-ol {
         font-family: Archivo, serif;
@@ -953,6 +956,13 @@
         margin: -10px 0 0;
     }
 
+    #CONTACTpage-h1 > a {
+        color: #002e7d;
+    }
+
+    #CONTACTpage-h1 > a:hover {
+        text-decoration: underline;
+    }
     fieldset {
         margin: 0 auto;
         padding: 0;
@@ -960,22 +970,12 @@
         text-align: center;
     }
 
-
     /*input[type="date"]::before{*/
         /*color: #000000;*/
         /*content: attr(placeholder) ": ";*/
     /*}*/
     /*input[type="date"]:focus::before {*/
         /*content: "" !important;*/
-    /*}*/
-
-    /*.location-dropdownmenu select:focus,*/
-    /*.location-dropdownmenu select.active {*/
-        /*outline: 0;*/
-        /*background: transparent;*/
-        /*-moz-box-shadow: none;*/
-        /*-webkit-box-shadow: none;*/
-        /*box-shadow: none;*/
     /*}*/
 
     #contact input[type="text"],
@@ -1005,7 +1005,6 @@
         -webkit-transition: border-color 0.3s ease-in-out;
         -moz-transition: border-color 0.3s ease-in-out;
         transition: border-color 0.3s ease-in-out;
-        border: 0 solid #1659FF;
     }
 
     #contact textarea {
@@ -1129,8 +1128,27 @@
         margin: 10px 0 0;
         color: #010101;
         width: 100%;
-        /*height: 2850px;*/
         overflow: auto;
+    }
+
+    .unsubscribe {
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .unsubscribe > a {
+        font-family: "Oswald SemiBold", serif;
+        font-size: 1.3em;
+        color: #1659FF;
+        text-align: center;
+        font-weight: normal;
+        text-decoration: underline;
+        margin: 20px 0 0;
+    }
+
+    .unsubscribe > a:hover {
+        text-decoration: underline;
     }
 
     @media screen and (min-width: 425px) {
