@@ -4,13 +4,13 @@
       font-size: 18px;
     }
 
-    /*.bar1, .bar2, .bar3 {*/
-      /*width: 22px;*/
-      /*height: 2px;*/
-      /*background-color: whitesmoke;*/
-      /*margin: 5px 0;*/
-      /*transition: 0.4s;*/
-    /*}*/
+    .bar1, .bar2, .bar3 {
+      width: 22px;
+      height: 2px;
+      background-color: whitesmoke;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
 
     /* The sidebar menu */
     .sidebar {
@@ -73,12 +73,12 @@
         background-color: transparent;
         color: whitesmoke;
         padding: 15px;
-        /*margin-top: -48px;*/
-        /*margin-left: -7px;*/
-        top: 13px;
-        right: 14px;
-        display: inline-block;
-        position: absolute;
+        margin-top: -48px;
+        margin-right: -7px;
+        /*top: -48px;*/
+        /*right: -7px;*/
+        display: block;
+        position: relative;
         border: none;
         float: right;
     }
