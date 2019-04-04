@@ -157,13 +157,14 @@
     }
 
     .backtotop-btn {
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 600;
         cursor: pointer;
         background-color: transparent;
         color: whitesmoke;
+        position: relative;
         padding: 0;
-        margin: -36px 5px 0 0;
+        margin: -38px 5px 0 0;
         border: none;
         float: right;
     }
