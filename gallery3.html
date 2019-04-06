@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Handmaids Girls College - Gallery</title>
+
+		<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+
+		<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
+
+		<!--<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+		integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>-->
+
+		<link href="css/fontawesome-free-5.7.2-web/css/all.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="css/mobile-menu-side.css" rel="stylesheet" type="text/css">
+		<link href="css/modal-gallery.css" rel="stylesheet">
+		<link href="css/HAGCO-mobile.css" rel="stylesheet" type="text/css">
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/scroll-to-top.js"></script>
+		<script src="js/mobile-menu-side.js"></script>
+		<script defer src="css/fontawesome-free-5.7.2-web/js/all.js"></script>
+
+	</head>
+	
+<body>
+		<nav>
+			<div class="navlistitem">
+				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
+			</div>
+
+			<div>
+				<button class="openbtn" onclick="openNav()">
+					<i class="material-icons md-48">menu</i>
+				</button>
+			</div>
+		</nav>
+
+		<header>
+			<a href="index.html">
+				<img src="images/HAGCO-logo-3a.png" class="HAGCO-logo-png" alt="HAGCO"/>
+			</a>
+		</header>
+
+		<div>
+			<img src="images/gallery-page-pic.jpg" class="pagepic">
+		</div>
+
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul class="fa-ul">
+
+				<li><a href="index.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-home"></i></span>Home</a></li>
+
+				<li><a href="admissions.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-graduation-cap"></i></span>Admission</a></li>
+
+				<li><a href="academics.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-book-reader"></i></span>Academics</a></li>
+
+				<li><a href="activities.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-running"></i></span>Activities</a></li>
+
+				<li><a href="news.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-tv"></i></span>News</a></li>
+
+				<li><a href="facilities.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-bed"></i></span>Facilities</a></li>
+
+				<li><a href="gallery.html" class="active"><span class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></span>Gallery</a></li>
+
+				<li><a href="about.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-users"></i></span>About</a></li>
+
+				<li><a href="contact.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-envelope"></i></span>Contact</a></li>
+
+				<li><a href="schedule.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-calendar-check"></i></span>Schedule a Tour</a></li>
+			</ul>
+		</div>
+
+		<style type="text/css">
+			div.galleryh2 {
+				font-family: "Oswald SemiBold", serif;
+				font-size: 1.5em;
+				color: whitesmoke;
+				padding: 5px;
+				text-align: center;
+				font-weight: 700;
+				margin: 0 auto;
+				font-style: normal;
+				background-color: #0D2171;
+			}
+			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: #373737;
+				opacity: 1; /* Firefox */
+			}
+
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				color: #373737;
+			}
+
+			::-ms-input-placeholder { /* Microsoft Edge */
+				color: #373737;
+			}
+		</style>
+
+		<div class="galleryBOX">
+			<div class="galleryh2">GALLERY</div><br><br>
+            <p>(Tap to view larger image)</p>
+
+				<div>
+					<!-- Trigger the Modal -->
+					<img class="myImg" src="images/Gallery/c1.jpg" alt="Christmas Outing" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c2.jpg" alt="Evening Prayers" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c8.jpg" alt="Behold the Handmaids" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c5.jpg" alt="Behold the handmaids..." style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c7.jpg" alt="Merry Christmas" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c4.jpg" alt="Cordial Teacher-Student Relationship" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c6.jpg" alt="Christmas Outing" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c9.jpg" alt="Outing" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c10.jpg" alt="Qualified Staff" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c11.jpg" alt="Healthy Diet" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c12.jpg" alt="Dedicated and Experienced Management Team" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c13.jpg" alt="Interhouse Sports - Superior General House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c14.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c15.jpg" alt="Interhouse Sports - Bishop's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c16.jpg" alt="Interhouse Sports - Handmaid's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c17.jpg" alt="Interhouse Sports - Mother Mary Charles Magdalene Walker's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c18.jpg" alt="MMCMW House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c19.jpg" alt="Handmaid's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c20.jpg" alt="Bishop's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c46.jpg" alt="Superior General's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c21.jpg" alt="Superior General's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c47.jpg" alt="Handmaid's House" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c31.jpg" alt="Interhouse Sports - Sack Race" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c22.jpg" alt="Interhouse Sports - 100 meters" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c23.jpg" alt="Interhouse Sports - Panel of Judges" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c24.jpg" alt="Interhouse Sports - Staff Race" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c34.jpg" alt="Qualified Staff" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c27.jpg" alt="Behold the handmaids..." style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c48.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c40.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c25.jpg" alt="Interhouse Sports - Sack Race" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c28.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c29.jpg" alt="Dance Time" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c3.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c32.jpg" alt="Rev. Sr. Anthonia Eze (Principal)" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c38.jpg" alt="Christmas Outing" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c30.jpg" alt="party Time" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c42.jpg" alt="Dance Time" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c37.jpg" alt="Medical Staff" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c39.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c36.jpg" alt="Dance Masters" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c43.jpg" alt="Beautiful and serene environment" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c45.jpg" alt="Outing" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c49.jpg" alt="Serious Students" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c50.jpg" alt="Chemistry Lab" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c51.jpg" alt="Qualified Staff" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c52.jpg" alt="Chemistry Practicals" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c53.jpg" alt="Chemistry Practicals" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c54.jpg" alt="Home Economics Lab" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c55.jpg" alt="Home Economics Lab" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c56.jpg" alt="Beautiful and Serene Environment" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c57.jpg" alt="Beautiful and Serene Environment" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c58.jpg" alt="Beautiful and Serene Environment" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c26.jpg" alt="Spacious Classrooms" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c59.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c60.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c61.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c62.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c63.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/Gallery/c64.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+
+				</div>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<!-- The Close Button -->
+					<span class="close">&times;</span>
+
+					<!-- Modal Content (The Image) -->
+					<img class="modal-content" id="img01">
+					<!--<img class="modal-content" id="img02">-->
+
+					<!-- Modal Caption (Image Text) -->
+					<div id="caption"></div>
+				</div>
+		</div>
+
+        <script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+			var i;
+
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementsByClassName("myImg");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+
+			for(i=0;i< img.length;i++)
+			{
+				img[i].onclick = function(){
+
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+        </script>
+
+		<footer>
+			<div class="div-footer-followus">
+				<p class="footerCONTACT-h2">FOLLOW US</p>
+				<p class="social-media-icons">
+					<a target="_blank" href="https://www.facebook.com/hagco" class="social-media-links">
+						<i class="footer-FB fab fa-facebook-square"></i>
+					</a>
+					<a target="_blank" href="https://www.instagram.com/hagco" class="social-media-links">
+						<i class="footer-INSTA fab fa-instagram"></i>
+					</a>
+					<a target="_blank" href="https://www.twitter.com/hagco" class="social-media-links">
+						<i class="footer-TWITTER fab fa-twitter-square"></i>
+					</a>
+				</p>
+			</div>
+
+			<div class="div-footer-contact">
+				<p class="footerCONTACT-h2">CONTACT US</p>
+				<p>
+					<i class="icon-footer-contact fas fa-phone"></i>&nbsp;&nbsp; +2348036729608, +2347019653553<br />
+					<i class="icon-footer-contact fas fa-envelope-open"></i>&nbsp;&nbsp;<a href="mailto:handmaidsgirlscollege@gmail.com" class="footerCONTACT-email">handmaidsgirlscollege@gmail.com</a>
+				</p>
+			</div>
+
+			<div class="div-footer-add">
+				<p class="footerADDRESS-h2">FIND US</p>
+				<p>
+					Off Ranch Road, Along Chairman's Road<br />
+					Obudu LGA, Cross River State,<br />
+					Nigeria.
+				</p>
+			</div>
+
+			<div class="container-newsletter">
+				<p class="newsletter-h2">STAY WITH US</p>
+				<div>
+					<form id="newsletter" action="newsletter-signup.php" method="post">
+						<fieldset>
+							<div class="newsletter-email">
+								<input placeholder="Email Address" name="email" type="email" tabindex="1" required>
+							</div>
+
+							<div>
+								<button name=submit type="submit" tabindex="2" value="Submit">
+									<span>Subscribe</span>
+								</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<div class="unsubscribe">
+				<a href="unsubscribe.html">
+					Unsubscribe
+				</a>
+			</div>
+
+			<div class="div-footer-copyright">
+				<p>
+					<i class="copyright far fa-copyright"></i>&nbsp;2019 Handmaids Girls College<br />
+					All Rights Reserved.<br>
+					Website designed by <a target="_blank" href="mailto:ethernalarts@artlover.com" class="ethernalarts">Ethernal Arts</a>
+				</p>
+			</div>
+		</footer>
+
+		<nav-footer>
+			<div class="navlistitem">
+				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
+			</div>
+
+			<div>
+				<button class="backtotop-btn" onclick="topFunction()">
+					<i class="fas fa-arrow-circle-up"></i>
+				</button>
+			</div>
+		</nav-footer>
+</body>
+
+</html>
