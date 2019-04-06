@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Handmaids Girls College - Gallery</title>
+		<title>Handmaids Girls College - gallery</title>
 
 		<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 
@@ -17,22 +17,35 @@
 
 		<link href="css/fontawesome-free-5.7.2-web/css/all.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href="css/mobile-menu-side.css" rel="stylesheet" type="text/css">
 		<link href="css/modal-gallery.css" rel="stylesheet">
 		<link href="css/HAGCO-mobile.css" rel="stylesheet" type="text/css">
+		<link href="css/photoswipe.css" rel="stylesheet">
+		<link href="css/default-skin.css" rel="stylesheet">
 
-		<script src="js/jquery-3.2.1.min.js"></script>
+		<!-- Import PhotoSwipe Styles -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
+
+		<!-- A touch of fanciness 💄 -->
+		<link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
 		<script src="js/bootstrap.js"></script>
 		<script src="js/scroll-to-top.js"></script>
 		<script src="js/mobile-menu-side.js"></script>
 		<script defer src="css/fontawesome-free-5.7.2-web/js/all.js"></script>
 
+		<!-- Import jQuery and PhotoSwipe Scripts -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/photoswipe.min.js"></script>
+		<script src="js/photoswipe-ui-default.min.js"></script>
 	</head>
 	
-<body>
+	<body>
 		<nav>
 			<div class="navlistitem">
-				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
+				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;gallery</a>
 			</div>
 
 			<div>
@@ -49,7 +62,7 @@
 		</header>
 
 		<div>
-			<img src="images/gallery-page-pic.jpg" class="pagepic">
+			<img src="images/gallery-page-pic.jpg" class="pagepic" alt="">
 		</div>
 
 		<div id="mySidebar" class="sidebar">
@@ -68,7 +81,7 @@
 
 				<li><a href="facilities.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-bed"></i></span>Facilities</a></li>
 
-				<li><a href="gallery.html" class="active"><span class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></span>Gallery</a></li>
+				<li><a href="gallery.html" class="active"><span class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></span>gallery</a></li>
 
 				<li><a href="about.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-users"></i></span>About</a></li>
 
@@ -78,14 +91,34 @@
 			</ul>
 		</div>
 
-		<style type="text/css">
+		<style>
+			body {font-family: 'Bitter', Georgia, Times, sans-serif;}
+			h1 {margin: 2em;}
+
+			.pswp__caption__center {
+				text-align: center;
+				font-family: Quicksand, serif;
+			}
+
+			figure {
+				display: inline-block;
+				width: 30%;
+				float: left;
+				margin: 0 0 8px 8px;
+			}
+
+			img {width: 100%;}
+
+			.spacer {height: 5em;}
+
 			div.galleryh2 {
 				font-family: "Oswald SemiBold", serif;
 				font-size: 1.5em;
 				color: whitesmoke;
 				padding: 5px;
 				text-align: center;
-				font-weight: 700;
+				font-weight: 600;
+				margin: 0 auto;
 				font-style: normal;
 				background-color: #0D2171;
 			}
@@ -104,86 +137,304 @@
 		</style>
 
 		<div class="galleryBOX">
-			<div class="galleryh2">GALLERY</div><br><br>
-            <p>(Tap to view larger image)</p>
+			<div class="galleryh2">Gallery</div><br><br>
+            <p>A picture says a thousand words, it is a frozen moment in time. Please share these memorable moments with
+				us and let the pictures speak for themselves.<br>	Tap on thumbnail to view image.
+			</p><br>
 
-				<div>
-					<!-- Trigger the Modal -->
-					<img class="myImg" src="images/Gallery/c1.jpg" alt="Christmas Outing" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c2.jpg" alt="Evening Prayers" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c8.jpg" alt="Behold the Handmaids" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c5.jpg" alt="Behold the handmaids..." style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c7.jpg" alt="Merry Christmas" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c4.jpg" alt="Cordial Teacher-Student Relationship" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c6.jpg" alt="Christmas Outing" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c9.jpg" alt="Outing" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c10.jpg" alt="Qualified Staff" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c11.jpg" alt="Healthy Diet" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c12.jpg" alt="Dedicated and Experienced Management Team" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c13.jpg" alt="Interhouse Sports - Superior General House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c14.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c15.jpg" alt="Interhouse Sports - Bishop's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c16.jpg" alt="Interhouse Sports - Handmaid's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c17.jpg" alt="Interhouse Sports - Mother Mary Charles Magdalene Walker's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c18.jpg" alt="MMCMW House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c19.jpg" alt="Handmaid's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c20.jpg" alt="Bishop's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c46.jpg" alt="Superior General's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c21.jpg" alt="Superior General's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c47.jpg" alt="Handmaid's House" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c31.jpg" alt="Interhouse Sports - Sack Race" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c22.jpg" alt="Interhouse Sports - 100 meters" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c23.jpg" alt="Interhouse Sports - Panel of Judges" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c24.jpg" alt="Interhouse Sports - Staff Race" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c34.jpg" alt="Qualified Staff" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c27.jpg" alt="Behold the handmaids..." style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c48.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c40.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c25.jpg" alt="Interhouse Sports - Sack Race" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c28.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c29.jpg" alt="Dance Time" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c3.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c32.jpg" alt="Rev. Sr. Anthonia Eze (Principal)" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c38.jpg" alt="Christmas Outing" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c30.jpg" alt="party Time" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c42.jpg" alt="Dance Time" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c37.jpg" alt="Medical Staff" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c39.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c36.jpg" alt="Dance Masters" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c43.jpg" alt="Beautiful and serene environment" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c45.jpg" alt="Outing" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c49.jpg" alt="Serious Students" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c50.jpg" alt="Chemistry Lab" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c51.jpg" alt="Qualified Staff" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c52.jpg" alt="Chemistry Practicals" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c53.jpg" alt="Chemistry Practicals" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c54.jpg" alt="Home Economics Lab" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c55.jpg" alt="Home Economics Lab" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c56.jpg" alt="Beautiful and Serene Environment" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c57.jpg" alt="Beautiful and Serene Environment" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c58.jpg" alt="Beautiful and Serene Environment" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c26.jpg" alt="Spacious Classrooms" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c59.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c60.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c61.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c62.jpg" alt="Cultural Day" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c63.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
-					<img class="myImg" src="images/Gallery/c64.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+						<!-- Galley wrapper that contains all items -->
+						<div id="gallery" class="gallery" itemscope itemtype="http://schema.org/Imagegallery">
 
+							<!-- Use figure for a more semantic html -->
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+								<a href="images/gallery/c1.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<!-- Thumbnail -->
+									<img src="images/gallery/c1.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c2.jpg" data-caption="Evening Prayers<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c2.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c3.jpg" data-caption="Cultural Day<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c3.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c4.jpg" data-caption="Cordial Teacher-Student Relationship<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c4.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c5.jpg" data-caption="Behold the Handmaids...<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c5.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c6.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c6.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c7.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c7.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c8.jpg" data-caption="Behold the Handmaids...<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c8.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c9.jpg" data-caption="Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c9.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c10.jpg" data-caption="Conducive Classrooms<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c10.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c11.jpg" data-caption="Clean Refectory<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c11.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c12.jpg" data-caption="A dedicated and experienced management team<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c12.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c13.jpg" data-caption="Interhouse Sports - Superior General House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c13.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c14.jpg" data-caption="Interhouse Sports - Bishop's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c14.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c15.jpg" data-caption="Interhouse Sports - Bishop's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c15.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c16.jpg" data-caption="Interhouse Sports - Handmaids House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c16.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c17.jpg" data-caption="Interhouse Sports - MMCMW's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c17.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c18.jpg" data-caption="Interhouse Sports - MMCMW's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c18.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c19.jpg" data-caption="Interhouse Sports - Handmaids's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c19.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c20.jpg" data-caption="Interhouse Sports - Bishop's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c20.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c21.jpg" data-caption="Interhouse Sports - Superior General's House<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c21.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c22.jpg" data-caption="Interhouse Sports - 100meters Race<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c22.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c23.jpg" data-caption="Interhouse Sports - Panel of Judges<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c23.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c24.jpg" data-caption="Interhouse Sports - Staff Race<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c24.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c25.jpg" data-caption="Interhouse Sports - Sack Race<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c25.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c26.jpg" data-caption="Spacious and Conducive Classrooms<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c26.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c27.jpg" data-caption="Behold the Handmaids...<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c27.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c28.jpg" data-caption="Behold the Handmaids...<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c28.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c29.jpg" data-caption="Dance Masters<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c29.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/gallery/c23.jpg" data-caption="Interhouse Sports - Panel of Judges<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+									<img src="images/gallery/c23.jpg" itemprop="thumbnail" alt="Image description">
+								</a>
+							</figure>
+						</div>
+			</div>
+
+			<!-- Some spacing 😉 -->
+			<div class="spacer"></div>
+
+
+			<!-- Root element of PhotoSwipe. Must have class pswp. -->
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+				<!-- Background of PhotoSwipe.
+                     It's a separate element as animating opacity is faster than rgba(). -->
+				<div class="pswp__bg"></div>
+				<!-- Slides wrapper with overflow:hidden. -->
+				<div class="pswp__scroll-wrap">
+					<!-- Container that holds slides.
+                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                        Don't modify these 3 pswp__item elements, data is added later on. -->
+					<div class="pswp__container">
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+					</div>
+					<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+					<div class="pswp__ui pswp__ui--hidden">
+						<div class="pswp__top-bar">
+							<!--  Controls are self-explanatory. Order can be changed. -->
+							<div class="pswp__counter"></div>
+							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+							<button class="pswp__button pswp__button--share" title="Share"></button>
+							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+							<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+							<!-- element will get class pswp__preloader--active when preloader is running -->
+							<div class="pswp__preloader">
+								<div class="pswp__preloader__icn">
+									<div class="pswp__preloader__cut">
+										<div class="pswp__preloader__donut"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+							<div class="pswp__share-tooltip"></div>
+						</div>
+						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+						</button>
+						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+						</button>
+						<div class="pswp__caption">
+							<div class="pswp__caption__center"></div>
+						</div>
+					</div>
 				</div>
+			</div>
 
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-					<!-- The Close Button -->
-					<span class="close">&times;</span>
+			<!-- Import jQuery and PhotoSwipe Scripts -->
+			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
 
-					<!-- Modal Content (The Image) -->
-					<img class="modal-content" id="img01">
-					<!--<img class="modal-content" id="img02">-->
+			<script>
+				'use strict';
 
-					<!-- Modal Caption (Image Text) -->
-					<div id="caption"></div>
-				</div>
+				/* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+				(function($){
+
+					// Init empty gallery array
+					var container = [];
+
+					// Loop over gallery items and push it to the array
+					$('#gallery').find('figure').each(function(){
+						var $link = $(this).find('a'),
+								item = {
+									src: $link.attr('href'),
+									w: $link.data('width'),
+									h: $link.data('height'),
+									title: $link.data('caption')
+								};
+						container.push(item);
+					});
+
+					// Define click event on gallery item
+					$('a').click(function(event){
+
+						// Prevent location change
+						event.preventDefault();
+
+						// Define object and gallery options
+						var $pswp = $('.pswp')[0],
+								options = {
+									index: $(this).parent('figure').index(),
+									bgOpacity: 0.85,
+									showHideOpacity: true
+								};
+
+						// Initialize PhotoSwipe
+						var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+						gallery.init();
+					});
+
+				}(jQuery));
+			</script>
+
+					<img class="myImg" src="images/gallery/c63.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+					<img class="myImg" src="images/gallery/c64.jpg" alt="Cultural Day - Award Ceremony" style="width:45%; max-width:300px">
+
+
 		</div>
 
         <script>
@@ -286,7 +537,7 @@
 
 		<nav-footer>
 			<div class="navlistitem">
-				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
+				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;gallery</a>
 			</div>
 
 			<div>
@@ -295,6 +546,6 @@
 				</button>
 			</div>
 		</nav-footer>
-</body>
+	</body>
 
 </html>
