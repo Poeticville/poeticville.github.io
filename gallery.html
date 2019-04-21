@@ -117,10 +117,11 @@
 				font-family: "Oswald SemiBold", serif;
 				font-size: 1.5em;
 				color: whitesmoke;
-				padding: 5px;
+				padding: 5px 0;
 				text-align: center;
 				font-weight: 600;
 				margin: 0 auto;
+                width: 50%;
 				font-style: normal;
 				background-color: #0D2171;
 			}
@@ -140,24 +141,23 @@
 
 		<div class="galleryBOX">
 			<div class="galleryh2">GALLERY</div><br><br>
-            <p>Tap on thumbnail to view image.
+            <p>Tap on thumbnail to view full image.
 			</p>
 			<br><br>
-
 						<!-- Galley wrapper that contains all items -->
-						<div id="gallery" class="gallery" itemscope itemtype="http://schema.org/Imagegallery">
+						<div id="gallery" class="gallery">
 
 							<!-- Use figure for a more semantic html -->
-							<figure>
+							<figure href="images/gallery/c1.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004">
 								<!-- Link to the big image, not mandatory, but useful when there is no JS -->
-								<a href="images/gallery/c1.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+								<a href="images/gallery/c1.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004">
 									<!-- Thumbnail -->
 									<img src="images/gallery/c1.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
 							</figure>
 
 							<figure>
-								<a href="images/gallery/c2.jpg" data-caption="Evening Prayers<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
+								<a href="images/gallery/c2.jpg" data-caption="Evening Prayers<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004">
 									<img src="images/gallery/c2.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
 							</figure>
@@ -324,16 +324,16 @@
 								</a>
 							</figure>
 
-							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<figure href="images/gallery/c30.jpg" data-caption="Dance Masters<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004">
 								<a href="images/gallery/c30.jpg" data-caption="Dance Masters<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
 									<img src="images/gallery/c30.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
 							</figure>
-						</div><br><br>
+						</div>
+			<br><br>
 
 			<!-- Some spacing 😉 -->
 			<!--<div class="spacer"></div>-->
-
 
 			<!-- Root element of PhotoSwipe. Must have class pswp. -->
 			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -387,7 +387,7 @@
 			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
-
+            <!--<script src=" js/pswp-gal-selector.js"></script>-->
 			<script>
 				'use strict';
 
@@ -411,7 +411,7 @@
 					});
 
 					// Define click event on gallery item
-					$('a').click(function(event){
+					$('figure').click(function(event){
 
 						// Prevent location change
 						event.preventDefault();
@@ -423,7 +423,6 @@
 									bgOpacity: 0.85,
 									showHideOpacity: true
 								};
-
 						// Initialize PhotoSwipe
 						var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
 						gallery.init();
@@ -432,12 +431,13 @@
 				}(jQuery));
 			</script>
 
+
 			<div class="pagination">
-				<a href="gallery.html">&laquo;</a>
+				<!--<a href="gallery.html">&laquo;</a>-->
 				<a class="active" href="gallery.html">1</a>
 				<a href="gallery-2.html">2</a>
 				<a href="#">3</a>
-				<a href="#">&raquo;</a>
+				<!--<a href="#">&raquo;</a>-->
 			</div>
 		</div>
 
