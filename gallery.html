@@ -143,12 +143,12 @@
 			<div class="galleryh2">GALLERY</div><br><br>
             <p>Tap on thumbnail to view full image.
 			</p>
-			<br><br>
+			<br>
 						<!-- Galley wrapper that contains all items -->
 						<div id="gallery" class="gallery">
 
 							<!-- Use figure for a more semantic html -->
-							<figure href="images/gallery/c1.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004">
+							<figure>
 								<!-- Link to the big image, not mandatory, but useful when there is no JS -->
 								<a href="images/gallery/c1.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004">
 									<!-- Thumbnail -->
@@ -162,25 +162,25 @@
 								</a>
 							</figure>
 
-							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<figure>
 								<a href="images/gallery/c3.jpg" data-caption="Cultural Day<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
 									<img src="images/gallery/c3.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
 							</figure>
 
-							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<figure>
 								<a href="images/gallery/c4.jpg" data-caption="Cordial Teacher-Student Relationship<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
 									<img src="images/gallery/c4.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
 							</figure>
 
-							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<figure>
 								<a href="images/gallery/c5.jpg" data-caption="Behold the Handmaids...<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
 									<img src="images/gallery/c5.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
 							</figure>
 
-							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<figure>
 								<a href="images/gallery/c6.jpg" data-caption="Christmas Outing<br><em class='text-muted'>© HAGCO</em>" data-width="1500" data-height="1004" itemprop="contentUrl">
 									<img src="images/gallery/c6.jpg" itemprop="thumbnail" alt="Image description">
 								</a>
@@ -396,11 +396,11 @@
 				(function($){
 
 					// Init empty gallery array
-					var container = [];
+					const container = [];
 
 					// Loop over gallery items and push it to the array
 					$('#gallery').find('figure').each(function(){
-						var $link = $(this).find('a'),
+						const $link = $(this).find('a'),
 								item = {
 									src: $link.attr('href'),
 									w: $link.data('width'),
@@ -424,7 +424,7 @@
 									showHideOpacity: true
 								};
 						// Initialize PhotoSwipe
-						var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+						const gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
 						gallery.init();
 					});
 
