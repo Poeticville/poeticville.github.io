@@ -45,7 +45,7 @@
 	<body>
 		<nav>
 			<div class="navlistitem">
-				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;gallery</a>
+				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery /2</a>
 			</div>
 
 			<div>
@@ -81,7 +81,7 @@
 
 				<li><a href="facilities.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-bed"></i></span>Facilities</a></li>
 
-				<li><a href="gallery.html" class="active"><span class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></span>gallery</a></li>
+				<li><a href="gallery.html" class="active"><span class="fa-li"><i class="mobile-menu-icon fas fa-camera"></i></span>Gallery</a></li>
 
 				<li><a href="about.html"><span class="fa-li"><i class="mobile-menu-icon fas fa-users"></i></span>About</a></li>
 
@@ -141,11 +141,9 @@
 		</style>
 
 		<div class="galleryBOX">
-			<div class="galleryh2">Gallery</div><br><br>
-            <p>A picture says a thousand words, it is a frozen moment in time. Please share these memorable moments with
-				us.<br>	Tap on thumbnail to view image.
-			</p>
-			<br><br>
+			<div class="galleryh2">GALLERY</div><br><br>
+            <p>Tap on thumbnail to view image.</p>
+			<br>
 
 						<!-- Galley wrapper that contains all items -->
 						<div id="gallery" class="gallery" itemscope itemtype="http://schema.org/Imagegallery">
@@ -299,56 +297,56 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
 
-			<!--<script>-->
-			<!--'use strict';-->
+			<script>
+			'use strict';
 
-				<!--/* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */-->
+				/* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
 
-				<!--(function($){-->
+				(function($){
 
-					<!--// Init empty gallery array-->
-					<!--var container = [];-->
+					// Init empty gallery array
+					var container = [];
 
-					<!--// Loop over gallery items and push it to the array-->
-					<!--$('#gallery').find('figure').each(function(){-->
-						<!--var $link = $(this).find('a'),-->
-								<!--item = {-->
-									<!--src: $link.attr('href'),-->
-									<!--w: $link.data('width'),-->
-									<!--h: $link.data('height'),-->
-									<!--title: $link.data('caption')-->
-								<!--};-->
-						<!--container.push(item);-->
-					<!--});-->
+					// Loop over gallery items and push it to the array
+					$('#gallery').find('figure').each(function(){
+						var $link = $(this).find('a'),
+								item = {
+									src: $link.attr('href'),
+									w: $link.data('width'),
+									h: $link.data('height'),
+									title: $link.data('caption')
+								};
+						container.push(item);
+					});
 
-					<!--// Define click event on gallery item-->
-					<!--$('a').click(function(event){-->
+					// Define click event on gallery item
+					$('a').click(function(event){
 
-						<!--// Prevent location change-->
-						<!--event.preventDefault();-->
+						// Prevent location change
+						event.preventDefault();
 
-						<!--// Define object and gallery options-->
-						<!--var $pswp = $('.pswp')[0],-->
-								<!--options = {-->
-									<!--index: $(this).parent('figure').index(),-->
-									<!--bgOpacity: 0.85,-->
-									<!--showHideOpacity: true-->
-								<!--};-->
+						// Define object and gallery options
+						var $pswp = $('.pswp')[0],
+								options = {
+									index: $(this).parent('figure').index(),
+									bgOpacity: 0.85,
+									showHideOpacity: true
+								};
 
-						<!--// Initialize PhotoSwipe-->
-						<!--var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);-->
-						<!--gallery.init();-->
-					<!--});-->
+						// Initialize PhotoSwipe
+						var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+						gallery.init();
+					});
 
-				<!--}(jQuery)); -->
-			<!--</script>-->
+				}(jQuery));
+			</script>
 
 			<div class="pagination">
-				<a href="gallery.html">&laquo;</a>
+				<!--<a href="gallery.html">&laquo;</a>-->
 				<a href="gallery.html">1</a>
 				<a class="active" href="gallery-2.html">2</a>
 				<a href="gallery-3.html">3</a>
-				<a href="gallery-3.html">&raquo;</a>
+				<!--<a href="gallery-3.html">&raquo;</a>-->
 			</div>
 		</div>
 
