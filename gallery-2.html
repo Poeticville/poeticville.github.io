@@ -122,6 +122,7 @@
 				padding: 5px;
 				text-align: center;
 				font-weight: 600;
+                width: 50%;
 				margin: 0 auto;
 				font-style: normal;
 				background-color: #0D2171;
@@ -292,55 +293,6 @@
 				</div>
 			</div>
 
-			<!-- Import jQuery and PhotoSwipe Scripts -->
-			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
-
-			<script>
-			'use strict';
-
-				/* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
-
-				(function($){
-
-					// Init empty gallery array
-					var container = [];
-
-					// Loop over gallery items and push it to the array
-					$('#gallery').find('figure').each(function(){
-						var $link = $(this).find('a'),
-								item = {
-									src: $link.attr('href'),
-									w: $link.data('width'),
-									h: $link.data('height'),
-									title: $link.data('caption')
-								};
-						container.push(item);
-					});
-
-					// Define click event on gallery item
-					$('a').click(function(event){
-
-						// Prevent location change
-						event.preventDefault();
-
-						// Define object and gallery options
-						var $pswp = $('.pswp')[0],
-								options = {
-									index: $(this).parent('figure').index(),
-									bgOpacity: 0.85,
-									showHideOpacity: true
-								};
-
-						// Initialize PhotoSwipe
-						var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
-						gallery.init();
-					});
-
-				}(jQuery));
-			</script>
-
 			<div class="pagination">
 				<!--<a href="gallery.html">&laquo;</a>-->
 				<a href="gallery.html">1</a>
@@ -420,7 +372,7 @@
 
 		<nav-footer>
 			<div class="navlistitem">
-				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;gallery</a>
+				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery /2</a>
 			</div>
 
 			<div>
@@ -429,6 +381,54 @@
 				</button>
 			</div>
 		</nav-footer>
+
+        <!-- Import jQuery and PhotoSwipe Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
+        <script>
+            'use strict';
+
+            /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+            (function($){
+
+                // Init empty gallery array
+                var container = [];
+
+                // Loop over gallery items and push it to the array
+                $('#gallery').find('figure').each(function(){
+                    var $link = $(this).find('a'),
+                        item = {
+                            src: $link.attr('href'),
+                            w: $link.data('width'),
+                            h: $link.data('height'),
+                            title: $link.data('caption')
+                        };
+                    container.push(item);
+                });
+
+                // Define click event on gallery item
+                $('a').click(function(event){
+
+                    // Prevent location change
+                    event.preventDefault();
+
+                    // Define object and gallery options
+                    var $pswp = $('.pswp')[0],
+                        options = {
+                            index: $(this).parent('figure').index(),
+                            bgOpacity: 0.85,
+                            showHideOpacity: true
+                        };
+
+                    // Initialize PhotoSwipe
+                    var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+                    gallery.init();
+                });
+
+            }(jQuery));
+        </script>
 	</body>
 
 </html>
