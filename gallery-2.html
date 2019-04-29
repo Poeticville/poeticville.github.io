@@ -19,10 +19,9 @@
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href="css/mobile-menu-side.css" rel="stylesheet" type="text/css">
-		<link href="css/modal-gallery.css" rel="stylesheet">
-		<link href="css/HAGCO-mobile.css" rel="stylesheet" type="text/css">
 		<link href="css/photoswipe.css" rel="stylesheet">
 		<link href="css/default-skin.css" rel="stylesheet">
+		<link href="css/HAGCO-mobile.css" rel="stylesheet" type="text/css">
 
 		<!-- Import PhotoSwipe Styles -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
@@ -45,7 +44,7 @@
 	<body>
 		<nav>
 			<div class="navlistitem">
-				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
+				<a href="gallery-2.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
 			</div>
 
 			<div>
@@ -125,6 +124,17 @@
 				font-style: normal;
 				background-color: #0D2171;
 			}
+
+			div.required {
+				text-align: center;
+				font-family: Archivo, Arial, Lato, serif;
+				font-size: 1em;
+				font-weight: normal;
+				display: block;
+				color: #010101;
+				font-style: italic;
+			}
+
 			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 				color: #373737;
 				opacity: 1; /* Firefox */
@@ -141,8 +151,11 @@
 
 		<div class="galleryBOX">
 			<div class="galleryh2">GALLERY</div><br><br>
-            <p>Tap on thumbnail to view image.</p>
-			<br>
+			
+			<div class="required">
+				(Tap on a thumbnail to view the full image)
+			</div>
+			<br><br>
 
 						<!-- Galley wrapper that contains all items -->
 			<div class="gallery" id="gallery">
@@ -463,7 +476,7 @@
 
 		<nav-footer>
 			<div class="navlistitem">
-				<a href="gallery.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
+				<a href="gallery-2.html" class="active"><i class="fas fa-camera"></i>&nbsp;&nbsp;Gallery</a>
 			</div>
 
 			<div>

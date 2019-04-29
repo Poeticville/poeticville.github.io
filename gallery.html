@@ -61,7 +61,7 @@
 		</header>
 
 		<div>
-			<img alt="" class="pagepic" src="images/gallery-page-pic-1.jpg">
+			<img alt="" class="pagepic" src="images/gallery-page-pic-2.jpg">
 		</div>
 
 		<div class="sidebar" id="mySidebar">
@@ -110,8 +110,6 @@
 
 			img {width: 100%;}
 
-			/*.spacer {height: 5em;}*/
-
 			div.galleryh2 {
 				font-family: "Oswald SemiBold", serif;
 				font-size: 1.5em;
@@ -124,6 +122,16 @@
 				font-style: normal;
 				background-color: #0D2171;
 			}
+
+            div.required {
+                text-align: center;
+                font-family: Archivo, Arial, Lato, serif;
+                font-size: 1em;
+                font-weight: normal;
+                display: block;
+                color: #010101;
+                font-style: italic;
+            }
 
 			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 				color: #373737;
@@ -141,9 +149,10 @@
 
 		<div class="galleryBOX">
 			<div class="galleryh2">GALLERY</div><br><br>
-            <p>Tap on thumbnail to view full image.
-			</p>
-			<br>
+            <div class="required">
+                (Tap on a thumbnail to view the full image)
+			</div>
+			<br><br>
 						<!-- Galley wrapper that contains all items -->
             <div class="gallery" id="gallery">
 
